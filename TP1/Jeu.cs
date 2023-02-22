@@ -10,16 +10,15 @@ namespace TP1
     {
         // Enumeration
         public enum TypeDeJeu {
-            Monde ouvert,
+            Monde_Ouvert,
             FPS,
-            Simulation de ferme,
+            Simulation_De_Ferme,
             Survie,
             Horreur,
             Roguelike,
             Stratégie,
             Sport,
-            Crime,
-            Horreur
+            Crime
         }
 
         // Attributs

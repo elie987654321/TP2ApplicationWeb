@@ -11,9 +11,9 @@ namespace TP1
         // Enumeration
         public enum Role
         {
-            utilisateur,
-            admin,
-            technicien
+            Utilisateur,
+            Admin,
+            Technicien
         }
 
         // Attributs
