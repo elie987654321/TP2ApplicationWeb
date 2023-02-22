@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
-    internal class Jeu
+    public class Jeu
     {
         // Enumeration
         public enum TypeDeJeu {
@@ -85,7 +85,7 @@ namespace TP1
 
         public static bool operator!=(Jeu jeu1, Jeu jeu2)
         {
-            return jeu1.NomDuJeu == jeu2.NomDuJeu;
+            return jeu1.NomDuJeu != jeu2.NomDuJeu;
         }
 
         // ToString

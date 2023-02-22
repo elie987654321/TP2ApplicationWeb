@@ -885,6 +885,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "TP1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/TP1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TP1.dll": {}
+        }
       }
     }
   },
@@ -3867,6 +3877,11 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "TP1/1.0.0": {
+      "type": "project",
+      "path": "../TP1/TP1.csproj",
+      "msbuildProject": "../TP1/TP1.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3875,6 +3890,7 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
+      "TP1 >= 1.0.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -3909,7 +3925,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\1445131\\Documents\\GitHub\\TP1ApplicationWeb\\TP1\\TP1.csproj": {
+              "projectPath": "C:\\Users\\1445131\\Documents\\GitHub\\TP1ApplicationWeb\\TP1\\TP1.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

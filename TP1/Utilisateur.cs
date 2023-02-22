@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
-    internal class Utilisateur
+    public class Utilisateur
     {
         // Enumeration
         public enum Role

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
-    internal class Catalogue
+    public class Catalogue
     {   
 
         // Constructeur par defaut

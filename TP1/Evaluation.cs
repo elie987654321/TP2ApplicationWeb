@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
-    internal class Evaluation
+    public class Evaluation
     {
         // Enumeration
         public enum Cote
         {
-
+            EXCELLENT = 5,
+            TRES_BON = 4,
+            BON = 3,
+            MOYEN = 2,
+            MAUVAIS = 1
         }
 
         // Attributs
