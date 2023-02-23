@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1445131\\Documents\\GitHub\\TP1ApplicationWeb\\TP1\\TP1.csproj": {}
+    "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP1\\TP1ApplicationWeb\\TP1\\TP1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1445131\\Documents\\GitHub\\TP1ApplicationWeb\\TP1\\TP1.csproj": {
+    "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP1\\TP1ApplicationWeb\\TP1\\TP1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1445131\\Documents\\GitHub\\TP1ApplicationWeb\\TP1\\TP1.csproj",
+        "projectUniqueName": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP1\\TP1ApplicationWeb\\TP1\\TP1.csproj",
         "projectName": "TP1",
-        "projectPath": "C:\\Users\\1445131\\Documents\\GitHub\\TP1ApplicationWeb\\TP1\\TP1.csproj",
-        "packagesPath": "C:\\Users\\1445131\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1445131\\Documents\\GitHub\\TP1ApplicationWeb\\TP1\\obj\\",
+        "projectPath": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP1\\TP1ApplicationWeb\\TP1\\TP1.csproj",
+        "packagesPath": "C:\\Users\\1701633\\.nuget\\packages\\",
+        "outputPath": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP1\\TP1ApplicationWeb\\TP1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\1445131\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\1701633\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

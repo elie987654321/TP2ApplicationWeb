@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TP1
+﻿namespace TP1
 {
     public class Utilisateur
     {
@@ -32,7 +26,7 @@ namespace TP1
         public string Nom { get => nom; set => nom = value; }
         public string Prenom { get => prenom; set => prenom = value; }
         public Role Role1 { get => role; set => role = value; }
-        public List<Jeu> Favoris { get => favoris;  }
+        public List<Jeu> Favoris { get => favoris; }
         public List<Evaluation> Evaluations { get => evaluations; }
 
         // Constructeur par defaut

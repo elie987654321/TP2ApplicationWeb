@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TP1
+﻿namespace TP1
 {
     public class Jeu
     {
         // Enumeration
-        public enum TypeDeJeu {
+        public enum TypeDeJeu
+        {
             Monde_Ouvert,
             FPS,
             Simulation_De_Ferme,
@@ -45,7 +40,7 @@ namespace TP1
         public string Complet { get => complet; set => complet = value; }
         public string Image { get => image; set => image = value; }
 
- 
+
 
 
         // Constructeur par defaut
@@ -86,18 +81,19 @@ namespace TP1
         }
 
         // Comparaison
-        public static bool operator==(Jeu jeu1, Jeu jeu2)
+        public static bool operator ==(Jeu jeu1, Jeu jeu2)
         {
-           return jeu1.NomDuJeu == jeu2.NomDuJeu;
+            return jeu1.NomDuJeu == jeu2.NomDuJeu;
         }
 
-        public static bool operator!=(Jeu jeu1, Jeu jeu2)
+        public static bool operator !=(Jeu jeu1, Jeu jeu2)
         {
             return jeu1.NomDuJeu != jeu2.NomDuJeu;
         }
 
         // ToString
-        public override string ToString() {
+        public override string ToString()
+        {
             return $"{this.nomDuJeu} :\n" +
                 $"   Type de jeu - {this.typeDeJeu} \n" +
                 $"   Evaluation - {this.evaluation}\n" +
@@ -107,7 +103,7 @@ namespace TP1
                 $"   Producteur - {this.Producteur}\n" +
                 $"   Lien de l'extrait - {this.extrait}\n" +
                 $"   Lien vers le jeu complet - {this.complet}\n" +
-                $"   Lien vers l'image - {this.Image}\n" ;
+                $"   Lien vers l'image - {this.Image}\n";
         }
     }
 }

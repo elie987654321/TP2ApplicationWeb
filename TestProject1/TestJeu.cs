@@ -30,7 +30,7 @@ namespace TestProject1
             Jeu jeuTest2 = new Jeu();
             jeuTest2.NomDuJeu = "Jeux de testes";
 
-            Assert.That(jeuTest1 != jeuTest2); 
+            Assert.That(jeuTest1 != jeuTest2);
         }
 
     }

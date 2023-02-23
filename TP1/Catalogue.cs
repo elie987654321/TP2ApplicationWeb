@@ -1,15 +1,10 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TP1
 {
     public class Catalogue
-    {   
+    {
         // Attribut
         private List<Jeu> listeDeJeux;
 
@@ -20,60 +15,162 @@ namespace TP1
         }
 
         // Methodes
-        public void Ajouter(int decision, Jeu jeu, string fichier)
+        // Ajoute un jeu ou des jeux a partir d'un fichier JSON dans listeDeJeux
+        public void Ajouter(Jeu jeu, string fichier)
         {
-            // Ajoute un jeu
-            if (decision == 1)
+            Console.WriteLine("Entrez 1 pour ajouter un jeu en particulier ou 2 pour ajouter des jeux a partir d'un fichier");
+            string decision;
+            do
             {
-                this.listeDeJeux.Add(jeu);
+                decision = Console.ReadLine();
+            }
+            while (decision != "1" && decision != "2");
+
+            // Ajoute un jeu envoye en argument
+            if (decision == "1")
+            {
+
+                if (this.listeDeJeux.Contains(jeu))
+                {
+                    Console.WriteLine("Le jeu existe déjà dans la liste");
+                }
+                else
+                {
+                    this.listeDeJeux.Add(jeu);
+                }
+
             }
             // Ajoute une liste de jeux à partir d'un fichier json
-            else if (decision == 2)
+            else if (decision == "2")
             {
+                try
+                {
+                    List<Jeu> jeuxJson;
+                    jeuxJson = JsonConvert.DeserializeObject<List<Jeu>>(File.ReadAllText(@fichier));
 
-                this.listeDeJeux = JsonConvert.DeserializeObject<List<Jeu>>(File.ReadAllText(@fichier));
+                    foreach (Jeu objet in jeuxJson)
+                    {
+                        if (!this.listeDeJeux.Contains(objet))
+                        {
+                            this.listeDeJeux.Add(objet);
+                        }
 
-                
-                Console.WriteLine(this.listeDeJeux);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Votre fichier n'est pas valide, veuillez entrez un fichier valide");
+                    System.Environment.Exit(1);
+                }
             }
         }
 
-        public void Modifier(string numeroDuJeu, Jeu jeu)
+        // Modifie un jeu par un autre
+        public void Modifier(string nomDuJeuARemplacer, Jeu jeu)
         {
-            //this.listeDeJeux.Remove(numeroDuJeu);
-            //this.listeDeJeux.Add(numeroDuJeu, jeu);
+
+            for (int i = 0; i < this.listeDeJeux.Count; i++)
+            {
+                try
+                {
+                    if (this.listeDeJeux[i].NomDuJeu.ToString() == nomDuJeuARemplacer)
+                    {
+                        if (this.listeDeJeux[i] == jeu)
+                        {
+                            Console.WriteLine("Vous essayez de modifier un jeu par le même jeu");
+                        }
+                        else
+                        {
+                            this.listeDeJeux[i] = jeu;
+                        }
+
+                    }
+                }
+                catch (Exception e)
+                {
+
+                }
+
+            }
+
         }
 
-        public void Supprimer(int decision, string numeroDuJeu)
+        // Supprime un jeu ou tous les jeux dans listeDejeux
+        public void Supprimer(string nomDuJeuASupprimer)
         {
-            if(decision == 1)
+            Console.WriteLine("Entrez 1 pour supprimer un jeu en particulier ou 2 pour supprimer tous les jeux");
+            string decision;
+            do
             {
-                //this.listeDeJeux.Remove(numeroDuJeu);
+                decision = Console.ReadLine();
             }
-            else if (decision == 2)
+            while (decision != "1" && decision != "2");
+
+            if (decision == "1")
+            {
+                try
+                {
+                    foreach (Jeu objet in this.listeDeJeux)
+                    {
+                        if (objet.NomDuJeu == nomDuJeuASupprimer)
+                        {
+                            this.listeDeJeux.Remove(objet);
+                        }
+
+                    }
+                }
+                catch (Exception e)
+                {
+
+                }
+
+            }
+            else if (decision == "2")
             {
                 this.listeDeJeux.Clear();
+                Console.WriteLine("Tous les jeux ont ete supprimes");
+
             }
 
         }
 
+        // Sauvegarde les jeux dans un fichier JSON
         public void Sauvegarder(string fichier)
         {
-            string jsonListe = JsonConvert.SerializeObject(this.listeDeJeux, Formatting.Indented, new StringEnumConverter());
-            File.WriteAllText(@fichier, jsonListe);
+            string invalide = "Votre fichier n'est pas valide, veuillez entrez un fichier valide";
+
+            if (System.IO.Path.HasExtension(fichier))
+            {
+                if (File.Exists(fichier))
+                {
+                    string jsonListe = JsonConvert.SerializeObject(this.listeDeJeux, Formatting.Indented, new StringEnumConverter());
+                    File.WriteAllText(@fichier, jsonListe);
+                    Console.WriteLine("La sauvegarde a bien ete effectue");
+                }
+                else
+                {
+                    Console.WriteLine(invalide);
+
+                }
+            }
+            else
+            {
+                Console.WriteLine(invalide);
+            }
+
         }
 
         // ToString
         public override string ToString()
         {
-            string data = "";
+            string texte = "";
 
             foreach (Jeu jeu in this.listeDeJeux)
             {
-                data += jeu.ToString() + "\n";
+                texte += jeu.ToString() + "\n";
 
             }
-            return data;
+            return texte;
         }
     }
 }
