@@ -22,18 +22,29 @@ namespace TP1
         private Cote cote;
         private string description;
 
+        public Cote Cote1 { get => cote; set => cote = value; }
+        public string Description { get => description; set => description = value; }
+
         // Constructeur par defaut
         public Evaluation()
         {
-            this.cote = new Cote();
-            this.description = "";
+            this.Cote1 = new Cote();
+            this.Description = "";
         }
 
         // Constructeur complet
         public Evaluation(Cote cote, string description)
         {
-            this.cote = cote;
-            this.description = description;
+            this.Cote1 = cote;
+            this.Description = description;
+        }
+
+
+
+        // ToString
+        public override string ToString()
+        {
+            return this.Cote1 + ", " + this.Description;
         }
     }
 }

@@ -1,3 +1,32 @@
-{
-
-}
+[
+  {
+    "NomDuJeu": "Hogwarts Legacy : L'Héritage de Poudlard",
+    "TypeDeJeu1": "Monde_Ouvert",
+    "Evaluation": {
+      "Cote1": "EXCELLENT",
+      "Description": "Hogwarts Legacy : L'Héritage de Poudlard est un RPG d'action-aventure immersif en monde ouvert. Vous pouvez prendre le contrôle et vous retrouver au centre de votre propre aventure dans le Monde des sorciers."
+    },
+    "DateProduction": "2023-02-10T00:00:00",
+    "Duree": "Environ 35 heures",
+    "Auteur": "Warner Bros. Games",
+    "Producteur": "Avalanche Software",
+    "Extrait": "https://www.youtube.com/watch?v=M8ApyJqnME0",
+    "Complet": "https://store.steampowered.com/app/990080/Hogwarts_Legacy_LHritage_de_Poudlard/?l=french",
+    "Image": "https://www.bing.com/search?q=c%23+png+type+variable+select+png&qs=n&form=QBRE&sp=-1&ghc=1&pq=c%23+png+type+variable+select+png&sc=9-31&sk=&cvid=8FA287FEAC2B4C03BB25637C3B5D4475&ghsh=0&ghacc=0&ghpl="
+  },
+  {
+    "NomDuJeu": "Winnie de",
+    "TypeDeJeu1": "Monde_Ouvert",
+    "Evaluation": {
+      "Cote1": "EXCELLENT",
+      "Description": "all L'Héritage de Poudlard est un RPG d'action-aventure immersif en monde ouvert. Vous pouvez prendre le contrôle et vous retrouver au centre de votre propre aventure dans le Monde des sorciers."
+    },
+    "DateProduction": "2023-02-10T00:00:00",
+    "Duree": "Environ 35 heures",
+    "Auteur": "Warner Bros. Games",
+    "Producteur": "Avalanche Software",
+    "Extrait": "https://www.youtube.com/watch?v=M8ApyJqnME0",
+    "Complet": "https://store.steampowered.com/app/990080/Hogwarts_Legacy_LHritage_de_Poudlard/?l=french",
+    "Image": "https://www.bing.com/search?q=c%23+png+type+variable+select+png&qs=n&form=QBRE&sp=-1&ghc=1&pq=c%23+png+type+variable+select+png&sc=9-31&sk=&cvid=8FA287FEAC2B4C03BB25637C3B5D4475&ghsh=0&ghacc=0&ghpl="
+  }
+]

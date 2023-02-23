@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,11 +30,11 @@ namespace TP1
             // Ajoute une liste de jeux à partir d'un fichier json
             else if (decision == 2)
             {
-                List<Jeu> l;
 
-                l = JsonConvert.DeserializeObject<List<Jeu>>(File.ReadAllText(@fichier));
+                this.listeDeJeux = JsonConvert.DeserializeObject<List<Jeu>>(File.ReadAllText(@fichier));
 
-                this.listeDeJeux.AddRange(l);
+                
+                Console.WriteLine(this.listeDeJeux);
             }
         }
 
@@ -58,7 +59,7 @@ namespace TP1
 
         public void Sauvegarder(string fichier)
         {
-            string jsonListe = JsonConvert.SerializeObject(this.listeDeJeux, Formatting.Indented);
+            string jsonListe = JsonConvert.SerializeObject(this.listeDeJeux, Formatting.Indented, new StringEnumConverter());
             File.WriteAllText(@fichier, jsonListe);
         }
 

@@ -35,8 +35,8 @@ namespace TP1
 
         // Accesseurs et mutateurs
         public string NomDuJeu { get => nomDuJeu; set => nomDuJeu = value; }
-        private TypeDeJeu TypeDeJeu1 { get => typeDeJeu; set => typeDeJeu = value; }
-        internal Evaluation Evaluation { get => evaluation; set => evaluation = value; }
+        public TypeDeJeu TypeDeJeu1 { get => typeDeJeu; set => typeDeJeu = value; }
+        public Evaluation Evaluation { get => evaluation; set => evaluation = value; }
         public DateTime DateProduction { get => dateProduction; set => dateProduction = value; }
         public string Duree { get => duree; set => duree = value; }
         public string Auteur { get => auteur; set => auteur = value; }
