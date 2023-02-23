@@ -29,6 +29,7 @@ namespace TP1
             this.description = "";
         }
 
+
         // Constructeur complet
         public Evaluation(Cote cote, string description)
         {

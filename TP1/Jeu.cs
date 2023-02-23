@@ -98,7 +98,16 @@ namespace TP1
 
         // ToString
         public override string ToString() {
-            return NomDuJeu.ToString();
+            return $"{this.nomDuJeu} :\n" +
+                $"   Type de jeu - {this.typeDeJeu} \n" +
+                $"   Evaluation - {this.evaluation}\n" +
+                $"   Date de production - {this.dateProduction}\n" +
+                $"   Duree - {this.duree} \n" +
+                $"   Auteur - {this.auteur}\n" +
+                $"   Producteur - {this.Producteur}\n" +
+                $"   Lien de l'extrait - {this.extrait}\n" +
+                $"   Lien vers le jeu complet - {this.complet}\n" +
+                $"   Lien vers l'image - {this.Image}\n" ;
         }
     }
 }

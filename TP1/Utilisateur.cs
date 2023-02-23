@@ -26,6 +26,15 @@ namespace TP1
         private List<Jeu> favoris;
         private List<Evaluation> evaluations;
 
+        public string IdentifiantUnique { get => identifiantUnique; set => identifiantUnique = value; }
+        public string Pseudo { get => pseudo; set => pseudo = value; }
+        public string MotDePasse { get => motDePasse; set => motDePasse = value; }
+        public string Nom { get => nom; set => nom = value; }
+        public string Prenom { get => prenom; set => prenom = value; }
+        public Role Role1 { get => role; set => role = value; }
+        public List<Jeu> Favoris { get => favoris;  }
+        public List<Evaluation> Evaluations { get => evaluations; }
+
         // Constructeur par defaut
         public Utilisateur()
         {
@@ -48,17 +57,19 @@ namespace TP1
             this.nom = nom;
             this.prenom = prenom;
             this.role = role;
+            this.favoris = new List<Jeu>();
+            this.evaluations = new List<Evaluation>();
         }
 
         // Methodes
-        public void AjouterFavori()
+        public void AjouterFavori(Jeu favori)
         {
-
+            this.favoris.Add(favori);
         }
 
-        public void AjouterEvaluation()
+        public void AjouterEvaluation(Evaluation evaluation)
         {
-
+            this.evaluations.Add(evaluation);
         }
 
     }
