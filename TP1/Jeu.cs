@@ -11,7 +11,7 @@
             Survie,
             Horreur,
             Roguelike,
-            Stratégie,
+            Strategie,
             Sport,
             Crime
         }
