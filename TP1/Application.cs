@@ -90,17 +90,9 @@
                 "https://store.steampowered.com/app/1196590/Resident_Evil_Village/",
                 "https://www.residentevil.com/village/assets/images/common/share.png");
 
-            catalogue.Ajouter(jeu1, null);
-            catalogue.Ajouter(jeu2, null);
-            catalogue.Ajouter(jeu3, null);
-            catalogue.Ajouter(jeu4, null);
-            catalogue.Ajouter(jeu5, null);
-            catalogue.Ajouter(jeu6, null);
-            catalogue.Ajouter(jeu7, null);
-            catalogue.Ajouter(jeu8, null);
-            catalogue.Ajouter(jeu9, null);
-            catalogue.Ajouter(jeu10, null);
+            catalogue.Ajouter(1, jeu1, null);
 
+            Console.WriteLine(catalogue.ToString());
             catalogue.Sauvegarder(fichierJson1);
 
 

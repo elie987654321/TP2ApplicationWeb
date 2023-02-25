@@ -16,18 +16,11 @@ namespace TP1
 
         // Methodes
         // Ajoute un jeu ou des jeux a partir d'un fichier JSON dans listeDeJeux
-        public void Ajouter(Jeu jeu, string fichier)
+        public void Ajouter(int decision, Jeu jeu, string fichier)
         {
-            Console.WriteLine("Entrez 1 pour ajouter un jeu en particulier ou 2 pour ajouter des jeux a partir d'un fichier");
-            string decision;
-            do
-            {
-                decision = Console.ReadLine();
-            }
-            while (decision != "1" && decision != "2");
 
             // Ajoute un jeu envoye en argument
-            if (decision == "1")
+            if (decision == 1)
             {
 
                 if (this.listeDeJeux.Contains(jeu))
@@ -41,7 +34,7 @@ namespace TP1
 
             }
             // Ajoute une liste de jeux à partir d'un fichier json
-            else if (decision == "2")
+            else if (decision == 2)
             {
                 try
                 {
@@ -96,17 +89,10 @@ namespace TP1
         }
 
         // Supprime un jeu ou tous les jeux dans listeDejeux
-        public void Supprimer(string nomDuJeuASupprimer)
+        public void Supprimer(int decision, string nomDuJeuASupprimer)
         {
-            Console.WriteLine("Entrez 1 pour supprimer un jeu en particulier ou 2 pour supprimer tous les jeux");
-            string decision;
-            do
-            {
-                decision = Console.ReadLine();
-            }
-            while (decision != "1" && decision != "2");
 
-            if (decision == "1")
+            if (decision == 1)
             {
                 try
                 {
@@ -125,7 +111,7 @@ namespace TP1
                 }
 
             }
-            else if (decision == "2")
+            else if (decision == 2)
             {
                 this.listeDeJeux.Clear();
                 Console.WriteLine("Tous les jeux ont ete supprimes");
