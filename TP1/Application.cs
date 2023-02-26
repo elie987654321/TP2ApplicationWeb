@@ -91,13 +91,8 @@
                 "https://www.residentevil.com/village/assets/images/common/share.png");
 
             catalogue.Ajouter(1, jeu1, null);
-
             Console.WriteLine(catalogue.ToString());
-            catalogue.Sauvegarder(fichierJson1);
-
-
-
-
+            
 
         }
     }
