@@ -3,7 +3,7 @@
     public class Jeu
     {
         // Enumeration
-        public enum TypeDeJeu
+        public enum TypeJeu
         {
             Monde_Ouvert,
             FPS,
@@ -18,7 +18,7 @@
 
         // Attributs
         private string nomDuJeu;
-        private TypeDeJeu typeDeJeu;
+        private TypeJeu typeDeJeu;
         private Evaluation evaluation;
         private DateTime dateProduction;
         private string duree;
@@ -30,7 +30,7 @@
 
         // Accesseurs et mutateurs
         public string NomDuJeu { get => nomDuJeu; set => nomDuJeu = value; }
-        public TypeDeJeu TypeDeJeu1 { get => typeDeJeu; set => typeDeJeu = value; }
+        public TypeJeu TypeDeJeu { get => typeDeJeu; set => typeDeJeu = value; }
         public Evaluation Evaluation { get => evaluation; set => evaluation = value; }
         public DateTime DateProduction { get => dateProduction; set => dateProduction = value; }
         public string Duree { get => duree; set => duree = value; }
@@ -47,7 +47,7 @@
         public Jeu()
         {
             this.nomDuJeu = "";
-            this.TypeDeJeu1 = new TypeDeJeu();
+            this.TypeDeJeu = new TypeJeu();
             this.evaluation = new Evaluation();
             this.DateProduction = new DateTime();
             this.Duree = "";
@@ -59,7 +59,7 @@
         }
 
         // Constructeur complet
-        public Jeu(string nomDuJeu, TypeDeJeu typeDeJeu, Evaluation evaluation, DateTime dateProduction, string duree, string auteur, string producteur, string extrait, string complet, string image)
+        public Jeu(string nomDuJeu, TypeJeu typeDeJeu, Evaluation evaluation, DateTime dateProduction, string duree, string auteur, string producteur, string extrait, string complet, string image)
         {
             this.nomDuJeu = nomDuJeu;
             this.typeDeJeu = typeDeJeu;
@@ -103,7 +103,7 @@
                 $"   Producteur - {this.Producteur}\n" +
                 $"   Lien de l'extrait - {this.extrait}\n" +
                 $"   Lien vers le jeu complet - {this.complet}\n" +
-                $"   Lien vers l'image - {this.Image}";
+                $"   Lien vers l'image - {this.Image}\n";
         }
     }
 }

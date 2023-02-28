@@ -153,7 +153,7 @@ namespace TP1
 
             foreach (Jeu jeu in this.listeDeJeux)
             {
-                texte += jeu.ToString() + "\n";
+                texte += jeu + "\n";
 
             }
             return texte;

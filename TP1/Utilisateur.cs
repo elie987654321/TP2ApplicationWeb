@@ -3,7 +3,7 @@
     public class Utilisateur
     {
         // Enumeration
-        public enum Role
+        public enum RoleDUtilisateur
         {
             Utilisateur,
             Admin,
@@ -16,7 +16,7 @@
         private string motDePasse;
         private string nom;
         private string prenom;
-        private Role role;
+        private RoleDUtilisateur role;
         private List<Jeu> favoris;
         private List<Evaluation> evaluations;
 
@@ -25,7 +25,7 @@
         public string MotDePasse { get => motDePasse; set => motDePasse = value; }
         public string Nom { get => nom; set => nom = value; }
         public string Prenom { get => prenom; set => prenom = value; }
-        public Role Role1 { get => role; set => role = value; }
+        public RoleDUtilisateur Role { get => role; set => role = value; }
         public List<Jeu> Favoris { get => favoris; }
         public List<Evaluation> Evaluations { get => evaluations; }
 
@@ -37,13 +37,13 @@
             this.motDePasse = "";
             this.nom = "";
             this.prenom = "";
-            this.role = new Role();
+            this.role = new RoleDUtilisateur();
             this.favoris = new List<Jeu>();
             this.evaluations = new List<Evaluation>();
         }
 
         // Constructeur complet sans les favoris et évaluations
-        public Utilisateur(string identifiantUnique, string pseudo, string motDePasse, string nom, string prenom, Role role)
+        public Utilisateur(string identifiantUnique, string pseudo, string motDePasse, string nom, string prenom, RoleDUtilisateur role)
         {
             this.identifiantUnique = identifiantUnique;
             this.pseudo = pseudo;

@@ -10,7 +10,7 @@ namespace TestUtilisateur
         [SetUp]
         public void Init()
         {
-            this.utilisateur = new Utilisateur("1445133", "wwwcom", "2357", "poirier", "elie", Utilisateur.Role.Utilisateur);
+            this.utilisateur = new Utilisateur("1445133", "wwwcom", "2357", "poirier", "elie", Utilisateur.RoleDUtilisateur.Utilisateur);
         }
 
         [Test]

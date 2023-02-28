@@ -1,7 +1,7 @@
 [
   {
     "NomDuJeu": "Hogwarts Legacy : L'Héritage de Poudlard",
-    "TypeDeJeu1": "Monde_Ouvert",
+    "TypeDeJeu": "Monde_Ouvert",
     "Evaluation": {
       "Cote1": "EXCELLENT",
       "Description": "Hogwarts Legacy : L'Héritage de Poudlard est un RPG d'action-aventure immersif en monde ouvert. Vous pouvez prendre le contrôle et vous retrouver au centre de votre propre aventure dans le Monde des sorciers."
@@ -16,7 +16,7 @@
   },
   {
     "NomDuJeu": "Borderlands 3",
-    "TypeDeJeu1": "FPS",
+    "TypeDeJeu": "FPS",
     "Evaluation": {
       "Cote1": "TRES_BON",
       "Description": "Le shooter-looter est de retour avec ses trilliards de flingues pour une aventure complètement folle ! Affrontez de nouveaux mondes et ennemis dans la peau de l'un des quatre Chasseurs de l'Arche proposés, avec chacun ses propres compétences et options de personnalisation."
@@ -31,7 +31,7 @@
   },
   {
     "NomDuJeu": "Stardew Valley",
-    "TypeDeJeu1": "Simulation_De_Ferme",
+    "TypeDeJeu": "Simulation_De_Ferme",
     "Evaluation": {
       "Cote1": "EXCELLENT",
       "Description": "Vous avez hérité de l’ancienne parcelle de ferme de votre grand-père à Stardew Valley. Armé d’outils à la main et de quelques pièces de monnaie, vous avez entrepris de commencer votre nouvelle vie. Pouvez-vous apprendre à vivre de la terre et à transformer ces champs envahis par la végétation en une habitation prospère?"
@@ -46,7 +46,7 @@
   },
   {
     "NomDuJeu": "Valheim",
-    "TypeDeJeu1": "Survie",
+    "TypeDeJeu": "Survie",
     "Evaluation": {
       "Cote1": "EXCELLENT",
       "Description": "Un jeu multijoueur brutal d'exploration et de survie pour 1 à 10 joueurs, prenant place dans un purgatoire en génération procédurale inspiré par la culture viking. Combattez, bâtissez et accomplissez des exploits à la gloire d'Odin!"
@@ -61,7 +61,7 @@
   },
   {
     "NomDuJeu": "Atomic Heart",
-    "TypeDeJeu1": "Horreur",
+    "TypeDeJeu": "Horreur",
     "Evaluation": {
       "Cote1": "TRES_BON",
       "Description": "Dans un monde dystopique aussi déjanté que sublime, armez-vous de votre gant de pouvoirs, de votre arsenal d’armes blanches et de votre artillerie à la pointe de la technologie, et lancez-vous dans des affrontements explosifs et mortellement nerveux."
@@ -76,7 +76,7 @@
   },
   {
     "NomDuJeu": "Returnal",
-    "TypeDeJeu1": "Roguelike",
+    "TypeDeJeu": "Roguelike",
     "Evaluation": {
       "Cote1": "TRES_BON",
       "Description": "BRISEZ LE CYCLE Combattez pour votre survie dans ce jeu de tir à la troisième personne récompensé qui apporte l'histoire de Selene. Affrontez les défis du genre roguelike. Faites face à vos ennemis dans un déluge de balles. Voyagez dans Returnal™ avec un autre joueur."
@@ -91,7 +91,7 @@
   },
   {
     "NomDuJeu": "Sid Meier’s Civilization VI",
-    "TypeDeJeu1": "Strategie",
+    "TypeDeJeu": "Strategie",
     "Evaluation": {
       "Cote1": "TRES_BON",
       "Description": "Civilization VI est le dernier épisode de la franchise éponyme, récompensée de nombreuses fois. Repoussez les frontières de votre empire, développez votre patrimoine culturel et affrontez les plus grands seigneurs de l'histoire. Votre civilisation tiendra-t-elle face aux ravages du temps ?"
@@ -106,7 +106,7 @@
   },
   {
     "NomDuJeu": "NBA 2K23",
-    "TypeDeJeu1": "Sport",
+    "TypeDeJeu": "Sport",
     "Evaluation": {
       "Cote1": "MOYEN",
       "Description": "Soyez à la hauteur de ce qu’on attend de vous dans NBA 2K23. Le mode scénario permet de suivre votre joueur, qui sera surnommé MP, tout au long de sa carrière de basketball."
@@ -121,7 +121,7 @@
   },
   {
     "NomDuJeu": "Grand Theft Auto V",
-    "TypeDeJeu1": "Crime",
+    "TypeDeJeu": "Crime",
     "Evaluation": {
       "Cote1": "TRES_BON",
       "Description": "Grand Theft Auto V offre aux joueurs la possibilité d'explorer le monde de Los Santos et Blaine County et ses crimes."
@@ -136,7 +136,7 @@
   },
   {
     "NomDuJeu": "Resident Evil Village",
-    "TypeDeJeu1": "Horreur",
+    "TypeDeJeu": "Horreur",
     "Evaluation": {
       "Cote1": "EXCELLENT",
       "Description": "Survie et épouvante atteignent des sommets dans le 8e titre de la franchise Resident Evil : Resident Evil Village. Graphismes ultra-détaillés, action intense en vue subjective et récit palpitant : la peur n'a jamais été aussi palpable."

@@ -26,7 +26,7 @@ namespace TestCatalogue
             fichierJson1 = racineProjet + "/" + "Test.json";
             fileContents = File.ReadAllText(fichierJson1);
 
-            jeu1 = new Jeu("Hogwarts Legacy : L'Héritage de Poudlard", Jeu.TypeDeJeu.Monde_Ouvert,
+            jeu1 = new Jeu("Hogwarts Legacy : L'Héritage de Poudlard", Jeu.TypeJeu.Monde_Ouvert,
                 new Evaluation(Evaluation.Cote.EXCELLENT, "Hogwarts Legacy : L'Héritage de Poudlard est un RPG d'action-aventure " +
                 "immersif en monde ouvert. Vous pouvez prendre le contrôle et vous retrouver au centre de votre propre " +
                 "aventure dans le Monde des sorciers."), new DateTime(2023, 02, 10), "Environ 35 heures",
@@ -34,7 +34,7 @@ namespace TestCatalogue
                 "https://store.steampowered.com/app/990080/Hogwarts_Legacy_LHritage_de_Poudlard/?l=french",
                 "https://w0.peakpx.com/wallpaper/461/931/HD-wallpaper-hogwarts-legacy-poster.jpg");
 
-            jeu2 = new Jeu("Borderlands 3", Jeu.TypeDeJeu.FPS,
+            jeu2 = new Jeu("Borderlands 3", Jeu.TypeJeu.FPS,
                 new Evaluation(Evaluation.Cote.TRES_BON, "Le shooter-looter est de retour avec ses trilliards de flingues pour une aventure " +
                 "complètement folle ! Affrontez de nouveaux mondes et ennemis dans la peau de l'un des quatre Chasseurs " +
                 "de l'Arche proposés, avec chacun ses propres compétences et options de personnalisation."), new DateTime(2020, 03, 13), "Environ 35 heures",
@@ -108,7 +108,7 @@ namespace TestCatalogue
         {
             catalogue.Ajouter(1, jeu1, null);
             Assert.IsTrue(catalogue.ToString().Equals($"{jeu1.NomDuJeu} :\n" +
-                $"   Type de jeu - {jeu1.TypeDeJeu1}\n" +
+                $"   Type de jeu - {jeu1.TypeDeJeu}\n" +
                 $"   Evaluation - {jeu1.Evaluation}\n" +
                 $"   Date de production - {jeu1.DateProduction}\n" +
                 $"   Duree - {jeu1.Duree}\n" +
