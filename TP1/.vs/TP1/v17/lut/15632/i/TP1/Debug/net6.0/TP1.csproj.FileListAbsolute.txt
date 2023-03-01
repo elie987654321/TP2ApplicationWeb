@@ -1,0 +1,75 @@
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\b\TP1\Debug\net6.0\TP1.exe
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\b\TP1\Debug\net6.0\TP1.deps.json
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\b\TP1\Debug\net6.0\TP1.runtimeconfig.json
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\b\TP1\Debug\net6.0\TP1.dll
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\b\TP1\Debug\net6.0\Newtonsoft.Json.dll
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\b\TP1\Debug\net6.0\Microsoft.CodeAnalysis.LiveUnitTesting.Runtime.dll
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\i\TP1\Debug\net6.0\TP1.csproj.AssemblyReference.cache
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\i\TP1\Debug\net6.0\TP1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\i\TP1\Debug\net6.0\TP1.AssemblyInfoInputs.cache
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\i\TP1\Debug\net6.0\TP1.AssemblyInfo.cs
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\i\TP1\Debug\net6.0\TP1.csproj.CopyComplete
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\i\TP1\Debug\net6.0\TP1.dll
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\i\TP1\Debug\net6.0\refint\TP1.dll
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\i\TP1\Debug\net6.0\TP1.genruntimeconfig.cache
+E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\6040\i\TP1\Debug\net6.0\ref\TP1.dll
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.exe
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.deps.json
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.runtimeconfig.json
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.dll
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\Microsoft.CodeAnalysis.LiveUnitTesting.Runtime.dll
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.csproj.AssemblyReference.cache
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.AssemblyInfoInputs.cache
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.AssemblyInfo.cs
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.csproj.CopyComplete
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.dll
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\refint\TP1.dll
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.genruntimeconfig.cache
+C:\Users\1445131\Documents\GitHub\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\ref\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\b\TP1\Debug\net6.0\TP1.exe
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\b\TP1\Debug\net6.0\TP1.deps.json
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\b\TP1\Debug\net6.0\TP1.runtimeconfig.json
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\b\TP1\Debug\net6.0\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\b\TP1\Debug\net6.0\Newtonsoft.Json.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\b\TP1\Debug\net6.0\Microsoft.CodeAnalysis.LiveUnitTesting.Runtime.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\i\TP1\Debug\net6.0\TP1.csproj.AssemblyReference.cache
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\i\TP1\Debug\net6.0\TP1.GeneratedMSBuildEditorConfig.editorconfig
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\i\TP1\Debug\net6.0\TP1.AssemblyInfoInputs.cache
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\i\TP1\Debug\net6.0\TP1.AssemblyInfo.cs
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\i\TP1\Debug\net6.0\TP1.csproj.CopyComplete
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\i\TP1\Debug\net6.0\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\i\TP1\Debug\net6.0\refint\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\i\TP1\Debug\net6.0\TP1.genruntimeconfig.cache
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\30088\i\TP1\Debug\net6.0\ref\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.exe
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.deps.json
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.runtimeconfig.json
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\Newtonsoft.Json.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\Microsoft.CodeAnalysis.LiveUnitTesting.Runtime.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.csproj.AssemblyReference.cache
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.GeneratedMSBuildEditorConfig.editorconfig
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.AssemblyInfoInputs.cache
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.AssemblyInfo.cs
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.csproj.CopyComplete
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\refint\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.genruntimeconfig.cache
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1\TP1ApplicationWeb\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\ref\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.exe
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.deps.json
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.runtimeconfig.json
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\Newtonsoft.Json.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\b\TP1\Debug\net6.0\Microsoft.CodeAnalysis.LiveUnitTesting.Runtime.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.csproj.AssemblyReference.cache
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.GeneratedMSBuildEditorConfig.editorconfig
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.AssemblyInfoInputs.cache
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.AssemblyInfo.cs
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.csproj.CopyComplete
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\refint\TP1.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\TP1.genruntimeconfig.cache
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP1Final\TP1\.vs\TP1\v17\lut\0\i\TP1\Debug\net6.0\ref\TP1.dll
