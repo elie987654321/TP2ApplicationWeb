@@ -3,7 +3,7 @@
     public class Evaluation
     {
         // Enumeration
-        public enum Cote
+        public enum CoteDeJeu
         {
             EXCELLENT = 5,
             TRES_BON = 4,
@@ -13,24 +13,24 @@
         }
 
         // Attributs
-        private Cote cote;
+        private CoteDeJeu cote;
         private string description;
 
-        public Cote Cote1 { get => cote; set => cote = value; }
+        public CoteDeJeu Cote { get => cote; set => cote = value; }
         public string Description { get => description; set => description = value; }
 
         // Constructeur par defaut
         public Evaluation()
         {
-            this.Cote1 = new Cote();
+            this.Cote = new CoteDeJeu();
             this.Description = "";
         }
 
 
         // Constructeur complet
-        public Evaluation(Cote cote, string description)
+        public Evaluation(CoteDeJeu cote, string description)
         {
-            this.Cote1 = cote;
+            this.Cote = cote;
             this.Description = description;
         }
 
@@ -39,7 +39,7 @@
         // ToString
         public override string ToString()
         {
-            return this.Cote1 + ", " + this.Description;
+            return this.Cote + ", " + this.Description;
         }
     }
 }

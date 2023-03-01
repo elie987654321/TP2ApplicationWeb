@@ -27,7 +27,7 @@ namespace TestCatalogue
             fileContents = File.ReadAllText(fichierJson1);
 
             jeu1 = new Jeu("Hogwarts Legacy : L'Héritage de Poudlard", Jeu.TypeJeu.Monde_Ouvert,
-                new Evaluation(Evaluation.Cote.EXCELLENT, "Hogwarts Legacy : L'Héritage de Poudlard est un RPG d'action-aventure " +
+                new Evaluation(Evaluation.CoteDeJeu.EXCELLENT, "Hogwarts Legacy : L'Héritage de Poudlard est un RPG d'action-aventure " +
                 "immersif en monde ouvert. Vous pouvez prendre le contrôle et vous retrouver au centre de votre propre " +
                 "aventure dans le Monde des sorciers."), new DateTime(2023, 02, 10), "Environ 35 heures",
                 "Warner Bros. Games", "Avalanche Software", "https://www.youtube.com/watch?v=M8ApyJqnME0",
@@ -35,7 +35,7 @@ namespace TestCatalogue
                 "https://w0.peakpx.com/wallpaper/461/931/HD-wallpaper-hogwarts-legacy-poster.jpg");
 
             jeu2 = new Jeu("Borderlands 3", Jeu.TypeJeu.FPS,
-                new Evaluation(Evaluation.Cote.TRES_BON, "Le shooter-looter est de retour avec ses trilliards de flingues pour une aventure " +
+                new Evaluation(Evaluation.CoteDeJeu.TRES_BON, "Le shooter-looter est de retour avec ses trilliards de flingues pour une aventure " +
                 "complètement folle ! Affrontez de nouveaux mondes et ennemis dans la peau de l'un des quatre Chasseurs " +
                 "de l'Arche proposés, avec chacun ses propres compétences et options de personnalisation."), new DateTime(2020, 03, 13), "Environ 35 heures",
                 "2K", "Gearbox Software", "https://www.youtube.com/watch?v=zW8rXQnKirE",

@@ -1,4 +1,6 @@
-﻿namespace TP1
+﻿using Newtonsoft.Json;
+
+namespace TP1
 {
     public class Jeu
     {
@@ -27,6 +29,7 @@
         private string extrait;
         private string complet;
         private string image;
+        private List<Evaluation.CoteDeJeu> evaluationMoyenne;
 
         // Accesseurs et mutateurs
         public string NomDuJeu { get => nomDuJeu; set => nomDuJeu = value; }
@@ -40,7 +43,8 @@
         public string Complet { get => complet; set => complet = value; }
         public string Image { get => image; set => image = value; }
 
-
+        [JsonIgnore]
+        public List<Evaluation.CoteDeJeu> EvaluationMoyenne { get => evaluationMoyenne; set => evaluationMoyenne = value; }
 
 
         // Constructeur par defaut
@@ -56,6 +60,7 @@
             this.Extrait = "";
             this.Complet = "";
             this.Image = "";
+            this.evaluationMoyenne = new List<Evaluation.CoteDeJeu>();
         }
 
         // Constructeur complet
@@ -71,6 +76,7 @@
             this.extrait = extrait;
             this.complet = complet;
             this.image = image;
+            this.evaluationMoyenne = new List<Evaluation.CoteDeJeu>();
         }
 
 
@@ -78,6 +84,45 @@
         public Jeu(string nomDuJeu)
         {
             this.NomDuJeu = nomDuJeu;
+        }
+
+        //Methode
+        public bool Nouveaute()
+        {
+            bool estNouveau = false;
+
+            if((DateTime.Now - this.dateProduction).TotalDays < 30)
+            {
+                estNouveau = true;
+            }
+
+            return estNouveau;
+        }
+
+        public void AjouterEvaluationCote(List<Evaluation> listeEvaluation)
+        {
+            
+            foreach (Evaluation evaluation in listeEvaluation) {
+                if (this.evaluation.Description == evaluation.Description)
+                {
+                    this.evaluationMoyenne.Add(evaluation.Cote);
+                }
+                    
+            }
+        }
+
+        public int MoyenneEvaluations()
+        {
+            int total = 0;
+
+            foreach (Evaluation.CoteDeJeu cote in this.evaluationMoyenne)
+            {
+                total += Convert.ToInt32(((int)cote));
+            }
+
+            double moyenne = total / this.evaluationMoyenne.Count;
+
+            return Convert.ToInt32(Math.Floor(moyenne));
         }
 
         // Comparaison
