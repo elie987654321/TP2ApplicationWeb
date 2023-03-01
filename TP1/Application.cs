@@ -104,16 +104,7 @@
             Utilisateur technicien2 = new Utilisateur("pauulll24", "PaulCool", "fdgo2937", "Frappier", "Paul", Utilisateur.RoleDUtilisateur.Technicien);
 
             // Ajout des 10 jeux au catalogue
-            catalogue.Ajouter(1, jeu1, null);
-            catalogue.Ajouter(1, jeu2, null);
-            catalogue.Ajouter(1, jeu3, null);
-            catalogue.Ajouter(1, jeu4, null);
-            catalogue.Ajouter(1, jeu5, null);
-            catalogue.Ajouter(1, jeu6, null);
-            catalogue.Ajouter(1, jeu7, null);
-            catalogue.Ajouter(1, jeu8, null);
-            catalogue.Ajouter(1, jeu9, null);
-            catalogue.Ajouter(1, jeu10, null);
+            catalogue.Ajouter(2, null, fichierJson2);
 
             Console.WriteLine("Les jeux du catalogue");
             Console.WriteLine(catalogue);
@@ -124,10 +115,6 @@
 
             jeu1.AjouterEvaluationCote(utilisateur1.Evaluations);
             Console.WriteLine(jeu1.MoyenneEvaluations());
-            
-
-
-
 
         }
     }
