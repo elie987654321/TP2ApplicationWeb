@@ -30,7 +30,7 @@ namespace TP2
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Home}/{action=Accueil}/{id?}");
 
             app.Run();
         }

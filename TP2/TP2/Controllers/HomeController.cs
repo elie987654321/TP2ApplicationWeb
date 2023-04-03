@@ -13,12 +13,22 @@ namespace TP2.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Accueil()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult ListeDeJeux()
+        {
+            return View();
+        }
+
+        public IActionResult Favoris()
+        {
+            return View();
+        }
+
+        public IActionResult FicheDeJeu()
         {
             return View();
         }
