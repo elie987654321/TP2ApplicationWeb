@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZnY4WnFVRJw/ntDsIdSZmcs5moTjqY06+qZDcVoQsm4=",
+  "Hash": "BwtPKl8TzcYGTfK3iX3SXkFuSUcGuLBxPJZNmF7ii6E=",
   "Source": "TP2",
   "BasePath": "_content/TP2",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "E:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\json\\utilisateurs.json",
+      "SourceId": "TP2",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\",
+      "BasePath": "_content/TP2",
+      "RelativePath": "json/utilisateurs.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\json\\utilisateurs.json"
     },
     {
       "Identity": "E:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
