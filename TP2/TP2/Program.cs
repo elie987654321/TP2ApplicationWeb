@@ -4,6 +4,8 @@ namespace TP2
     {
         public static void Main(string[] args)
         {
+            Dev.CreerFichierJSonUtilisateur();
+
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.

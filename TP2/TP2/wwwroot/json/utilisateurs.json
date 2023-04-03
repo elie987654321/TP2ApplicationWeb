@@ -1,0 +1,30 @@
+{
+  "IdentifiantUnique": "bob123",
+  "Pseudo": "",
+  "MotDePasse": "secret",
+  "Nom": "Bobob",
+  "Prenom": "Bob",
+  "Role": "Utilisateur",
+  "Favoris": [
+    {
+      "NomDuJeu": "Un jeu",
+      "TypeDeJeu": "Monde_Ouvert",
+      "Evaluation": {
+        "Cote": 0,
+        "Description": ""
+      },
+      "DateProduction": "2023-04-03T10:31:28.0674545-04:00",
+      "Duree": "20192 heures",
+      "Auteur": "Bob",
+      "Producteur": "Bob le producteur",
+      "Extrait": "",
+      "Image": ""
+    }
+  ],
+  "Evaluations": [
+    {
+      "Cote": "BON",
+      "Description": "Pas pire comme jeu"
+    }
+  ]
+}

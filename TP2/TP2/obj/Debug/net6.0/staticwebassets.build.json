@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i9MBYdVahJQunybifkRnjdYVCB+Uu3/XDUJauTz+VTA=",
+  "Hash": "DC67QuuIVOE7g+sBByB+n6RGFVASOg12Zs0gl9xzfqo=",
   "Source": "TP2",
   "BasePath": "_content/TP2",
   "Mode": "Default",
@@ -102,12 +102,12 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\1445131\\Documents\\GitHub\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\json\\utilisateurs.js",
+      "Identity": "C:\\Users\\1445131\\Documents\\GitHub\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\json\\utilisateurs.json",
       "SourceId": "TP2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\1445131\\Documents\\GitHub\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\",
       "BasePath": "_content/TP2",
-      "RelativePath": "json/utilisateurs.js",
+      "RelativePath": "json/utilisateurs.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,7 +116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\json\\utilisateurs.js"
+      "OriginalItemSpec": "wwwroot\\json\\utilisateurs.json"
     },
     {
       "Identity": "C:\\Users\\1445131\\Documents\\GitHub\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

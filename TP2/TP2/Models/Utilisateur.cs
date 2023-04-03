@@ -1,4 +1,7 @@
-﻿namespace TP1
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+namespace TP2
 {
     public class Utilisateur
     {
@@ -64,6 +67,31 @@
         public void AjouterEvaluation(Evaluation evaluation)
         {
             this.evaluations.Add(evaluation);
+        }
+
+        public void Sauvegarder(string fichier)
+        {
+            string invalide = "Votre fichier n'est pas valide, veuillez entrez un fichier valide";
+
+            if (System.IO.Path.HasExtension(fichier))
+            {
+                if (File.Exists(fichier))
+                {
+                    string json = JsonConvert.SerializeObject(this, Formatting.Indented, new StringEnumConverter());
+                    File.WriteAllText(@fichier, json);
+                    Console.WriteLine("La sauvegarde a bien ete effectue");
+                }
+                else
+                {
+                    Console.WriteLine(invalide);
+
+                }
+            }
+            else
+            {
+                Console.WriteLine(invalide);
+            }
+
         }
 
     }
