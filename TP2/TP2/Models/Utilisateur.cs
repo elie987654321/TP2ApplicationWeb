@@ -13,6 +13,11 @@ namespace TP2
             Technicien
         }
 
+        public static List<Utilisateur> ChargerListUtilisateurs(string fichier)
+        { 
+             return JsonConvert.DeserializeObject<List<Utilisateur>>(File.ReadAllText(@fichier));
+        }
+
         // Attributs
         private string identifiantUnique;
         private string pseudo;
