@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using TP2.Models;
+using Newtonsoft.Json;
 
 namespace TP2.Controllers
 {
@@ -15,6 +16,8 @@ namespace TP2.Controllers
 
         public IActionResult Accueil()
         {
+            string userString = HttpContext.Session.GetString("Utilisateur");
+            Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
             return View();
         }
 

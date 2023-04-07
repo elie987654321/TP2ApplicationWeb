@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace TP2
+namespace TP2.Models
 {
+    [Serializable]
     public class Utilisateur
     {
         // Enumeration
@@ -13,10 +14,6 @@ namespace TP2
             Technicien
         }
 
-        public static List<Utilisateur> ChargerListUtilisateurs(string fichier)
-        { 
-             return JsonConvert.DeserializeObject<List<Utilisateur>>(File.ReadAllText(@fichier));
-        }
 
         // Attributs
         private string identifiantUnique;
@@ -74,30 +71,6 @@ namespace TP2
             this.evaluations.Add(evaluation);
         }
 
-        public void Sauvegarder(string fichier)
-        {
-            string invalide = "Votre fichier n'est pas valide, veuillez entrez un fichier valide";
-
-            if (System.IO.Path.HasExtension(fichier))
-            {
-                if (File.Exists(fichier))
-                {
-                    string json = JsonConvert.SerializeObject(this, Formatting.Indented, new StringEnumConverter());
-                    File.WriteAllText(@fichier, json);
-                    Console.WriteLine("La sauvegarde a bien ete effectue");
-                }
-                else
-                {
-                    Console.WriteLine(invalide);
-
-                }
-            }
-            else
-            {
-                Console.WriteLine(invalide);
-            }
-
-        }
-
+       
     }
 }

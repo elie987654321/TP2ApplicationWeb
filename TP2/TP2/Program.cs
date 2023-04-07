@@ -1,3 +1,4 @@
+
 namespace TP2
 {
     public class Program
@@ -5,11 +6,15 @@ namespace TP2
         public static void Main(string[] args)
         {
             Dev.CreerFichierJSonUtilisateur();
+            //Dev.TestDeserializerUtilisateur();
 
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddSession();
+            builder.Services.AddDistributedMemoryCache();
 
             var app = builder.Build();
 
@@ -21,6 +26,7 @@ namespace TP2
                 app.UseHsts();
             }
 
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -30,7 +36,7 @@ namespace TP2
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Accueil}/{id?}");
+                pattern: "{controller=Connexion}/{action=Accueil}/{id?}");
 
             app.Run();
         }

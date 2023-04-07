@@ -1,30 +1,32 @@
-{
-  "IdentifiantUnique": "bob123",
-  "Pseudo": "",
-  "MotDePasse": "secret",
-  "Nom": "Bobob",
-  "Prenom": "Bob",
-  "Role": "Utilisateur",
-  "Favoris": [
-    {
-      "NomDuJeu": "Un jeu",
-      "TypeDeJeu": "Monde_Ouvert",
-      "Evaluation": {
-        "Cote": 0,
-        "Description": ""
-      },
-      "DateProduction": "2023-04-06T14:59:13.2345316-04:00",
-      "Duree": "20192 heures",
-      "Auteur": "Bob",
-      "Producteur": "Bob le producteur",
-      "Extrait": "",
-      "Image": ""
-    }
-  ],
-  "Evaluations": [
-    {
-      "Cote": "BON",
-      "Description": "Pas pire comme jeu"
-    }
-  ]
-}
+[
+  {
+    "IdentifiantUnique": "bob123",
+    "Pseudo": "lol",
+    "MotDePasse": "secret",
+    "Nom": "Bobob",
+    "Prenom": "Bob",
+    "Role": "Utilisateur",
+    "Favoris": [
+      {
+        "NomDuJeu": "Un jeu",
+        "TypeDeJeu": "Monde_Ouvert",
+        "Evaluation": {
+          "Cote": 0,
+          "Description": ""
+        },
+        "DateProduction": "2023-04-07T15:12:07.5848648-04:00",
+        "Duree": "20192 heures",
+        "Auteur": "Bob",
+        "Producteur": "Bob le producteur",
+        "Extrait": "",
+        "Image": ""
+      }
+    ],
+    "Evaluations": [
+      {
+        "Cote": "BON",
+        "Description": "Pas pire comme jeu"
+      }
+    ]
+  }
+]

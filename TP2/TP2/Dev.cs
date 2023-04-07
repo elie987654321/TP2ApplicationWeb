@@ -1,4 +1,7 @@
-﻿namespace TP2
+﻿using System.Linq;
+using TP2.Models;
+
+namespace TP2
 {
     public static class Dev
     {
@@ -9,6 +12,7 @@
             Utilisateur utilisateur1 = new Utilisateur();
             utilisateur1.Prenom = "Bob";
             utilisateur1.Nom = "Bobob";
+            utilisateur1.Pseudo = "lol";
             utilisateur1.MotDePasse = "secret";
             utilisateur1.Role = Utilisateur.RoleDUtilisateur.Utilisateur;
             utilisateur1.IdentifiantUnique = "bob123";
@@ -26,10 +30,19 @@
             jeu.NomDuJeu = "Un jeu";
             jeu.Producteur = "Bob le producteur";
             jeu.TypeDeJeu = Jeu.TypeJeu.Monde_Ouvert;
+            utilisateur1.AjouterFavori(jeu)  ;
 
-            utilisateur1.AjouterFavori(jeu);
 
-            utilisateur1.Sauvegarder(chemin + "/wwwroot/json/utilisateurs.json");
+            ListeUtilisateurs listeUser = new ListeUtilisateurs();
+
+            listeUser.AjouterUtilisateur(utilisateur1);
+
+            listeUser.Sauvegarder(chemin + "/wwwroot/json/utilisateurs.json");
+        }
+
+        public static void TestDeserializerUtilisateur(string identifiantUnique)
+        {
+            ListeUtilisateurs liste = new ListeUtilisateurs(); 
         }
 
     }
