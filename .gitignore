@@ -21,7 +21,6 @@ TP2/ProjetDeTestNUnit/obj/ProjetDeTestNUnit.csproj.nuget.dgspec.json
 TP2/TP2/bin/Debug/net6.0/TP2.exe
 TP2/TP2/bin/Debug/net6.0/TP2.staticwebassets.runtime.json
 TP2/TP2/obj/Debug/net6.0/project.razor.vs.json
-*.dll
 TP2/TP2/obj/Debug/net6.0/staticwebassets.build.json
 TP2/TP2/obj/Debug/net6.0/staticwebassets.development.json
 TP2/TP2/obj/Debug/net6.0/TP2.csproj.FileListAbsolute.txt
@@ -29,4 +28,3 @@ TP2/TP2/obj/Debug/net6.0/TP2.csproj.FileListAbsolute.txt
 TP2/TP2/obj/project.assets.json
 *.sentinel
 TP2/TP2/obj/TP2.csproj.nuget.dgspec.json
-TP2/TP2/wwwroot/json/utilisateurs.json
