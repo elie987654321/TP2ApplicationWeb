@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace TP1
+namespace TP2.Models
 {
     public class Catalogue
     {

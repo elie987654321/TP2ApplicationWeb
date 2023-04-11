@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace TP1
+namespace TP2.Models
 {
     public class Jeu
     {
@@ -40,7 +40,6 @@ namespace TP1
         public string Auteur { get => auteur; set => auteur = value; }
         public string Producteur { get => producteur; set => producteur = value; }
         public string Extrait { get => extrait; set => extrait = value; }
-        public string Complet { get => complet; set => complet = value; }
         public string Image { get => image; set => image = value; }
 
         [JsonIgnore]
@@ -58,7 +57,6 @@ namespace TP1
             this.Auteur = "";
             this.Producteur = "";
             this.Extrait = "";
-            this.Complet = "";
             this.Image = "";
             this.evaluationMoyenne = new List<Evaluation.CoteDeJeu>();
         }

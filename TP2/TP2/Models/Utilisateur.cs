@@ -1,5 +1,9 @@
-﻿namespace TP1
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+namespace TP2.Models
 {
+    [Serializable]
     public class Utilisateur
     {
         // Enumeration
@@ -9,6 +13,7 @@
             Admin,
             Technicien
         }
+
 
         // Attributs
         private string identifiantUnique;
@@ -66,5 +71,6 @@
             this.evaluations.Add(evaluation);
         }
 
+       
     }
 }
