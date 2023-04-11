@@ -15,6 +15,8 @@ namespace TP2.Controllers
 
         public IActionResult Accueil()
         {
+
+
             return View();
         }
 
