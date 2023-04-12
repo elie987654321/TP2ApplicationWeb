@@ -29,7 +29,7 @@ namespace TP2.Controllers
 
             
             this.HttpContext.Session.SetString("Utilisateur", JsonConvert.SerializeObject(user));
-            return RedirectToAction("Accueil", "Home");
+            return View();
 
         }
 

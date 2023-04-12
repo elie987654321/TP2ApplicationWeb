@@ -31,3 +31,7 @@ img{
     left: 0;
     min-height: 300px;
 }
+
+#deconnecter{
+    border:solid 1px;
+}

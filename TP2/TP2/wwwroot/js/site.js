@@ -1,3 +1,5 @@
 ﻿$(document).ready(function () {
-    $('.carousel').carousel();
+    $('#carouselExampleIndicators').carousel({
+        interval: 4500
+    });
 });

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\TP2.csproj": {}
+    "U:\\GItTP2ApplicationWeb\\TP2ApplicationWeb\\TP2\\TP2\\TP2.csproj": {}
   },
   "projects": {
-    "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\TP2.csproj": {
+    "U:\\GItTP2ApplicationWeb\\TP2ApplicationWeb\\TP2\\TP2\\TP2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\TP2.csproj",
+        "projectUniqueName": "U:\\GItTP2ApplicationWeb\\TP2ApplicationWeb\\TP2\\TP2\\TP2.csproj",
         "projectName": "TP2",
-        "projectPath": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\TP2.csproj",
+        "projectPath": "U:\\GItTP2ApplicationWeb\\TP2ApplicationWeb\\TP2\\TP2\\TP2.csproj",
         "packagesPath": "C:\\Users\\1701633\\.nuget\\packages\\",
-        "outputPath": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\obj\\",
+        "outputPath": "U:\\GItTP2ApplicationWeb\\TP2ApplicationWeb\\TP2\\TP2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,6 +47,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
             }
           },
           "imports": [
