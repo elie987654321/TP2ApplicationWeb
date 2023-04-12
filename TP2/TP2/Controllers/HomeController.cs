@@ -18,21 +18,39 @@ namespace TP2.Controllers
         {
             string userString = HttpContext.Session.GetString("Utilisateur");
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
+
+            ViewBag.Prenom = user.Prenom;
+
             return View();
         }
 
         public IActionResult ListeDeJeux()
         {
+            string userString = HttpContext.Session.GetString("Utilisateur");
+            Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
+
+            ViewBag.Prenom = user.Prenom;
+
             return View();
         }
 
         public IActionResult Favoris()
         {
+            string userString = HttpContext.Session.GetString("Utilisateur");
+            Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
+
+            ViewBag.Prenom = user.Prenom;
+
             return View();
         }
 
         public IActionResult FicheDeJeu()
         {
+            string userString = HttpContext.Session.GetString("Utilisateur");
+            Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
+
+            ViewBag.Prenom = user.Prenom;
+
             return View();
         }
 
