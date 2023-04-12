@@ -58,15 +58,25 @@ namespace TP2.Models
         //Retourne null si l'utilisateur la combinaison pseudo/mot de passe ne correspond a aucun utilisateur
         public Utilisateur Connexion(string pseudo, string motDePasse)
         {
+            bool trouve = false;
             int i = 0;
             Utilisateur u ;
 
             do {
                 u = this.liste[i];
+                trouve = u.Pseudo == pseudo && u.MotDePasse == motDePasse; 
                 i++;
-            } while ((!(u.Pseudo == pseudo && u.MotDePasse == motDePasse)) && i < liste.Count - 1);
+            } 
+            while (!trouve && i < liste.Count - 1);
 
-            return u;
-        }
+            if (trouve)
+            {
+                return u;
+            }
+            else
+            {
+                return null;
+            }
+        }   
     }
 }

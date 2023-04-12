@@ -13,14 +13,15 @@ namespace TP2.Controllers
 
         public ActionResult Accueil()
         {
+            return View();
 
             /*
             ListeUtilisateurs listeDesUtilisateurs = new ListeUtilisateurs();
             listeDesUtilisateurs.Charger(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
-
+            
             Utilisateur utilisateurTrouve = listeDesUtilisateurs.Connexion(nomUtilisateur, motDePasse);
             */
-
+            /*
             ListeUtilisateurs listeDesUtilisateurs = new ListeUtilisateurs();
             listeDesUtilisateurs.Charger(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
 
@@ -30,12 +31,26 @@ namespace TP2.Controllers
             
             this.HttpContext.Session.SetString("Utilisateur", JsonConvert.SerializeObject(user));
             return RedirectToAction("Accueil", "Home");
-
+            */
         }
 
-        /*
+        
         public ActionResult Connexion(string nomUtilisateur, string motDePasse)
         {
-        }*/
+            ListeUtilisateurs listeDesUtilisateurs = new ListeUtilisateurs();
+            listeDesUtilisateurs.Charger(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
+
+            Utilisateur utilisateurTrouve = listeDesUtilisateurs.Connexion(nomUtilisateur, motDePasse);
+
+            if (utilisateurTrouve != null)
+            {
+                this.HttpContext.Session.SetString("Utilisateur", JsonConvert.SerializeObject(utilisateurTrouve));
+                return RedirectToAction("Accueil", "Home");
+            }
+            else
+            {
+                return RedirectToAction("Accueil", "Connexion");
+            }
+        }
     }
 }
