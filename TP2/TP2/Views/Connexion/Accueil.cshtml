@@ -13,5 +13,5 @@
     <label for="motDePasse">Mot de passe</label>
     <input type="password" id="motDePasse" name="motDePasse"/>
     <input type="submit" value="Se connecter" asp-action="Connexion"/>
-    <input type="submit" value="Créer un compte" asp-action="CreerCompte"/>
 </form>
+<p>@Html.ActionLink("Créer un compte", "CreerCompte")</p>

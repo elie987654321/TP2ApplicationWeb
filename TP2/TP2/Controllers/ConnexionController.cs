@@ -18,6 +18,11 @@ namespace TP2.Controllers
 
         }
 
+        public ActionResult CreerCompte()
+        { 
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Connexion(string nomUtilisateur, string motDePasse)
         {
@@ -33,7 +38,7 @@ namespace TP2.Controllers
             }
             else
             {
-                return RedirectToAction("Accueil", "Connexion");
+                return RedirectToAction("Accueil", "Connexion", new { @message = "Veuillez entrer un nom d'utilisateur et un mot de passe valide" });
             }
         }
 
@@ -51,7 +56,7 @@ namespace TP2.Controllers
                 return RedirectToAction("Accueil", "Home" );
             }
             
-            return RedirectToAction("Accueil", "Connexion", new { @message = "Veuillez entrer un nom d'utilisateur qui n'est pas deja utilise et un mot de passe" });
+            return RedirectToAction("Accueil", "Connexion");
         }
     }
 }
