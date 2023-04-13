@@ -19,8 +19,7 @@ namespace TP2.Controllers
             string userString = HttpContext.Session.GetString("Utilisateur");
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
 
-            ViewBag.Prenom = user.Prenom;
-
+            ViewBag.Pseudo = user.Pseudo;
             return View();
         }
 
@@ -29,8 +28,7 @@ namespace TP2.Controllers
             string userString = HttpContext.Session.GetString("Utilisateur");
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
 
-            ViewBag.Prenom = user.Prenom;
-
+            ViewBag.Pseudo = user.Pseudo;
             return View();
         }
 
@@ -39,17 +37,38 @@ namespace TP2.Controllers
             string userString = HttpContext.Session.GetString("Utilisateur");
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
 
-            ViewBag.Prenom = user.Prenom;
+            ViewBag.Pseudo = user.Pseudo;
 
             return View();
         }
 
-        public IActionResult FicheDeJeu()
+        public IActionResult FicheDeJeu(int id)
         {
+            Catalogue catalogue = new Catalogue();
+            catalogue.Ajouter(2, null, Environment.CurrentDirectory + "/wwwroot/json/fichierDeJeuxAuDepart.json");
+            Console.WriteLine(catalogue);
+
+            if (id == 1)
+            {
+                ViewBag.NomDuJeu = "";
+                ViewBag.TypeDeJeu = "";
+                ViewBag.Evaluation = "";
+                ViewBag.DateProduction = "";
+                ViewBag.Duree = "";
+                ViewBag.Auteur = "";
+                ViewBag.Producteur = "";
+                ViewBag.Extrait = "";
+                ViewBag.Complet = "";
+                ViewBag.Image = "1.jpg";
+            }
+            
+
             string userString = HttpContext.Session.GetString("Utilisateur");
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
 
-            ViewBag.Prenom = user.Prenom;
+            ViewBag.Pseudo = user.Pseudo;
+
+            //Désérialiser
 
             return View();
         }

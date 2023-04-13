@@ -53,3 +53,8 @@ img{
     font-size: 30px;
     font-family: Arial, sans-serif;
 }
+
+.fiche {
+    float:left;
+    width: 50%;
+}

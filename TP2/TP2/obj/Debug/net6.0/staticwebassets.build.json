@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SlQs+h/hkMWTmGf+u1WGmb9K8B83ChgVxPZwyf5Zzeo=",
+  "Hash": "M6sMdyTt+Tpv5VZl3iC+uz3NEaw+qbHhirrpSMExjVg=",
   "Source": "TP2",
   "BasePath": "_content/TP2",
   "Mode": "Default",
@@ -83,23 +83,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\images\\2.jpg",
-      "SourceId": "TP2",
-      "SourceType": "Discovered",
-      "ContentRoot": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\",
-      "BasePath": "_content/TP2",
-      "RelativePath": "images/2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\2.jpg"
     },
     {
       "Identity": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\images\\imagesCarousel\\1.jpg",
@@ -306,6 +289,23 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+      "Identity": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\json\\fichierDeJeuxAuDepart.json",
+      "SourceId": "TP2",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\",
+      "BasePath": "_content/TP2",
+      "RelativePath": "json/fichierDeJeuxAuDepart.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\json\\fichierDeJeuxAuDepart.json"
+    },
+    {
       "Identity": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\json\\utilisateurs.json",
       "SourceId": "TP2",
       "SourceType": "Discovered",
@@ -321,6 +321,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\json\\utilisateurs.json"
+    },
+    {
+      "Identity": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\json\\utilisateursAuDepart.json",
+      "SourceId": "TP2",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\",
+      "BasePath": "_content/TP2",
+      "RelativePath": "json/utilisateursAuDepart.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\json\\utilisateursAuDepart.json"
     },
     {
       "Identity": "F:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\GithubTP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

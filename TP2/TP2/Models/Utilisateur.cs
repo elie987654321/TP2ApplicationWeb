@@ -42,7 +42,7 @@ namespace TP2.Models
             this.motDePasse = "";
             this.nom = "";
             this.prenom = "";
-            this.role = new RoleDUtilisateur();
+            this.role = RoleDUtilisateur.Utilisateur;
             this.favoris = new List<Jeu>();
             this.evaluations = new List<Evaluation>();
         }

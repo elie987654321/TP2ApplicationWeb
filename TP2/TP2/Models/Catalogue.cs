@@ -14,6 +14,9 @@ namespace TP2.Models
             this.listeDeJeux = new List<Jeu>();
         }
 
+        // Accesseur et mutateur
+        public List<Jeu> ListeDeJeux { get => listeDeJeux; set => listeDeJeux = value; }
+
         // Methodes
         // Ajoute un jeu ou des jeux a partir d'un fichier JSON dans listeDeJeux
         public void Ajouter(int decision, Jeu jeu, string fichier)
