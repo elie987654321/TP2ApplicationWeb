@@ -14,7 +14,7 @@
           "Cote": 0,
           "Description": ""
         },
-        "DateProduction": "2023-04-13T14:11:36.1358324-04:00",
+        "DateProduction": "2023-04-13T15:25:22.3491248-04:00",
         "Duree": "20192 heures",
         "Auteur": "Bob",
         "Producteur": "Bob le producteur",
@@ -28,5 +28,15 @@
         "Description": "Pas pire comme jeu"
       }
     ]
+  },
+  {
+    "IdentifiantUnique": "",
+    "Pseudo": "test2",
+    "MotDePasse": "secret2",
+    "Nom": "",
+    "Prenom": "",
+    "Role": "Utilisateur",
+    "Favoris": [],
+    "Evaluations": []
   }
 ]

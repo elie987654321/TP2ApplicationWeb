@@ -27,7 +27,6 @@ namespace TP2.Models
                 else
                 {
                     Console.WriteLine(invalide);
-
                 }
             }
             else
@@ -67,7 +66,7 @@ namespace TP2.Models
                 trouve = u.Pseudo == pseudo && u.MotDePasse == motDePasse; 
                 i++;
             } 
-            while (!trouve && i < liste.Count - 1);
+            while (!trouve && i < liste.Count);
 
             if (trouve)
             {
@@ -77,6 +76,68 @@ namespace TP2.Models
             {
                 return null;
             }
-        }   
+        }
+
+        //Retourne false si l'utilisateur ne peut pas etre creer
+        public bool CreerUtilisateur(string pseudo, string motDePasse)
+        {
+            //Verifie qu'un pseudo valide a été entrer
+            if (pseudo == null || pseudo == "")
+            {
+                return false;
+            }
+
+
+            //Verifie qu'un mot de passe valide a été entrée
+            if (motDePasse == null || motDePasse == "")
+            {
+                return false;
+            }
+
+
+            //Verifie si le nom d'utilisateur existe deja
+            bool trouve = false;
+            int i = 0;
+            Utilisateur utilisateurATester;
+            do
+            {
+                utilisateurATester = this.liste[i];
+                trouve = utilisateurATester.Pseudo == pseudo;
+                i++;
+            }
+            while (!trouve && i < liste.Count - 1);
+            if (trouve)
+            {
+                return false;
+            }
+
+            //Ajout de l'utilisateur
+            Utilisateur utilisateur = new Utilisateur();
+            utilisateur.Pseudo = pseudo;
+            utilisateur.MotDePasse = motDePasse;
+            this.AjouterUtilisateur(utilisateur);
+            this.Sauvegarder(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
+
+            return true;
+        }
+
+        public Utilisateur GetUtilisateurByPseudo(string pseudo)
+        {
+            bool trouve = false;
+            Utilisateur u = null;
+
+            int i = 0;
+            do
+            {
+                if (liste[i].Pseudo == pseudo)
+                {
+                    u = liste[i];
+                }
+                i++;
+            }
+            while (i < liste.Count && u == null);
+
+            return u;
+        }
     }
 }
