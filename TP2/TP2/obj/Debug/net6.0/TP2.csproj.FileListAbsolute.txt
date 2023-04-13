@@ -981,3 +981,8 @@ C:\Users\1445131\Documents\GitHub\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\ref
 C:\Users\1445131\Documents\GitHub\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\TP2.pdb
 C:\Users\1445131\Documents\GitHub\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\TP2.genruntimeconfig.cache
 C:\Users\1445131\Documents\GitHub\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\ref\TP2.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\GithubTP2\TP2ApplicationWeb\TP2\TP2\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\GithubTP2\TP2ApplicationWeb\TP2\TP2\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\GithubTP2\TP2ApplicationWeb\TP2\TP2\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\GithubTP2\TP2ApplicationWeb\TP2\TP2\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\GithubTP2\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\TP2.MvcApplicationPartsAssemblyInfo.cs
