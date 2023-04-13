@@ -55,7 +55,7 @@ namespace TP2.Models
 
 
         //Retourne null si l'utilisateur la combinaison pseudo/mot de passe ne correspond a aucun utilisateur
-        public Utilisateur Connexion(string pseudo, string motDePasse)
+        public Utilisateur Connexion(string identifiant, string motDePasse)
         {
             bool trouve = false;
             int i = 0;
@@ -63,7 +63,7 @@ namespace TP2.Models
 
             do {
                 u = this.liste[i];
-                trouve = u.Pseudo == pseudo && u.MotDePasse == motDePasse; 
+                trouve = u.IdentifiantUnique == identifiant && u.MotDePasse == motDePasse; 
                 i++;
             } 
             while (!trouve && i < liste.Count);

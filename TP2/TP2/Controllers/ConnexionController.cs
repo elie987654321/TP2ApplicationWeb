@@ -11,10 +11,16 @@ namespace TP2.Controllers
     public class ConnexionController : Controller
     {
 
-        public ActionResult Accueil()
+        public ActionResult Accueil(string message = "")
         {
+            ViewBag.message = message;
             return View();
 
+        }
+
+        public ActionResult CreerCompte()
+        { 
+            return View();
         }
 
         [HttpPost]
@@ -32,7 +38,7 @@ namespace TP2.Controllers
             }
             else
             {
-                return RedirectToAction("Accueil", "Connexion");
+                return RedirectToAction("Accueil", "Connexion", new { @message = "Veuillez entrer un nom d'utilisateur et un mot de passe valide" });
             }
         }
 
@@ -47,7 +53,7 @@ namespace TP2.Controllers
             if (succes)
             {
                 this.HttpContext.Session.SetString("Utilisateur", JsonConvert.SerializeObject(listeDesUtilisateurs.GetUtilisateurByPseudo(nomUtilisateur)));
-                return RedirectToAction("Accueil", "Home");
+                return RedirectToAction("Accueil", "Home" );
             }
             
             return RedirectToAction("Accueil", "Connexion");

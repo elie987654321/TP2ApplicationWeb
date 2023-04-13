@@ -28,5 +28,35 @@
         "Description": "Pas pire comme jeu"
       }
     ]
+  },
+  {
+    "IdentifiantUnique": "",
+    "Pseudo": "test2",
+    "MotDePasse": "secret2",
+    "Nom": "",
+    "Prenom": "",
+    "Role": "Utilisateur",
+    "Favoris": [],
+    "Evaluations": []
+  },
+  {
+    "IdentifiantUnique": "",
+    "Pseudo": "test",
+    "MotDePasse": "12345",
+    "Nom": "",
+    "Prenom": "",
+    "Role": "Utilisateur",
+    "Favoris": [],
+    "Evaluations": []
+  },
+  {
+    "IdentifiantUnique": "",
+    "Pseudo": "test3",
+    "MotDePasse": "secret3",
+    "Nom": "",
+    "Prenom": "",
+    "Role": "Utilisateur",
+    "Favoris": [],
+    "Evaluations": []
   }
 ]
