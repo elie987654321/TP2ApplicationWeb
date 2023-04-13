@@ -40,6 +40,7 @@ img{
     float: left;
     width: 50%;
     padding: 5px;
+    border: solid 2px;
 }
 
 .row::after {
@@ -55,6 +56,23 @@ img{
 }
 
 .fiche {
-    float:left;
     width: 50%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.texteFiche {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.texteListe {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 80px;
+}
+
+html, body {
+    background-image: url('~/images/background.jpg');
+    background-size: cover;
 }

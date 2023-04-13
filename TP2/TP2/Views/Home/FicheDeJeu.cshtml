@@ -2,25 +2,25 @@
     ViewData["Title"] = "Fiche de jeu";
 }
 <div class="fiche">
-<img src="~/images/imagesCarousel/@ViewBag.Image" alt="4" style="width:100%">
+<img src="~/images/imagesCarousel/@ViewBag.Image" alt="imageDuJeu" style="width:100%">
 </div>
 
-<div>
-    <p>allo</p>
-    <p>allo 2</p>
+<p class="texteFiche"><b>Nom du jeu: </b>@ViewBag.NomDuJeu</p>
+<p class="texteFiche"><b>Type de jeu: </b>@ViewBag.TypeDeJeu</p>
+<p class="texteFiche"><b>Cote: </b>@ViewBag.EvaluationCote</p>
+<p class="texteFiche"><b>Description: </b>@ViewBag.EvaluationDescription</p>
+<p class="texteFiche"><b>Date de production: </b>@ViewBag.DateProduction</p>
+<p class="texteFiche"><b>Duree: </b>@ViewBag.Duree</p>
+<p class="texteFiche"><b>Auteur: </b>@ViewBag.Auteur</p>
+<p class="texteFiche"><b>Producteur: </b>@ViewBag.Producteur</p>
+
+<div class="texteFiche">
+    <b>Extrait: </b>
+    <a class="texteFiche" href="@ViewBag.Extrait">@ViewBag.Extrait</a>
 </div>
 
-<div>
-    <p>allo</p>
-    <p>allo 2</p>
+<div class="texteFiche">
+    <b>Complet: </b>
+    <a class="texteFiche" href="@ViewBag.Complet">@ViewBag.Complet</a>
 </div>
 
-<div>
-    <p>allo</p>
-    <p>allo 2</p>
-</div>
-
-<div>
-    <p>allo</p>
-    <p>allo 2</p>
-</div>

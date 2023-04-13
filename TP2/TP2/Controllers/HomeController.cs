@@ -46,29 +46,26 @@ namespace TP2.Controllers
         {
             Catalogue catalogue = new Catalogue();
             catalogue.Ajouter(2, null, Environment.CurrentDirectory + "/wwwroot/json/fichierDeJeuxAuDepart.json");
-            Console.WriteLine(catalogue);
 
-            if (id == 1)
+            if (id >= 0 || id <= catalogue.ListeDeJeux.Count - 1)
             {
-                ViewBag.NomDuJeu = "";
-                ViewBag.TypeDeJeu = "";
-                ViewBag.Evaluation = "";
-                ViewBag.DateProduction = "";
-                ViewBag.Duree = "";
-                ViewBag.Auteur = "";
-                ViewBag.Producteur = "";
-                ViewBag.Extrait = "";
-                ViewBag.Complet = "";
-                ViewBag.Image = "1.jpg";
+
+                ViewBag.NomDuJeu = catalogue.ListeDeJeux[id].NomDuJeu;
+                ViewBag.TypeDeJeu = catalogue.ListeDeJeux[id].TypeDeJeu;
+                ViewBag.EvaluationCote = catalogue.ListeDeJeux[id].Evaluation.Cote;
+                ViewBag.EvaluationDescription = catalogue.ListeDeJeux[id].Evaluation.Description;
+                ViewBag.DateProduction = catalogue.ListeDeJeux[id].DateProduction;
+                ViewBag.Duree = catalogue.ListeDeJeux[id].Duree;
+                ViewBag.Auteur = catalogue.ListeDeJeux[id].Auteur;
+                ViewBag.Producteur = catalogue.ListeDeJeux[id].Producteur;
+                ViewBag.Extrait = catalogue.ListeDeJeux[id].Extrait;
+                ViewBag.Complet = catalogue.ListeDeJeux[id].Complet;
+                ViewBag.Image = id+1 + ".jpg";
             }
             
-
             string userString = HttpContext.Session.GetString("Utilisateur");
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
-
             ViewBag.Pseudo = user.Pseudo;
-
-            //Désérialiser
 
             return View();
         }

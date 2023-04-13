@@ -3,57 +3,79 @@
     ViewData["Title"] = "Liste de jeux";
 }
 
+<h1 class="text-dark texteListe">Nos jeux</h1>
+
 <div class="row">
   <div class="column">
-    <img src="~/images/imagesCarousel/1.jpg" alt="1" style="width:100%">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu">Hogwarts Legacy</a>
+    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="0">
+        <img src="~/images/imagesCarousel/1.jpg" alt="1" style="width:100%">
+        Hogwarts Legacy
+    </a>
   </div>
   <div class="column">
-    <img src="~/images/imagesCarousel/2.jpg" alt="2" style="width:100%">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Connexion" asp-action="Accueil">Borderlands 3</a>
+    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="1">
+        <img src="~/images/imagesCarousel/2.jpg" alt="2" style="width:100%">
+        Borderlands 3
+    </a>
   </div>
 </div>
 
 <div class="row">
   <div class="column">
-    <img src="~/images/imagesCarousel/3.jpg" alt="3" style="width:100%">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Connexion" asp-action="Accueil">Stardew Valley</a>
+    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="2">
+        <img src="~/images/imagesCarousel/3.jpg" alt="3" style="width:100%">
+        Stardew Valley
+        </a>
   </div>
   <div class="column">
-    <img src="~/images/imagesCarousel/4.jpg" alt="4" style="width:100%">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Connexion" asp-action="Accueil">Valheim</a>
-  </div>
-</div>
-
-<div class="row">
-  <div class="column">
-    <img src="~/images/imagesCarousel/5.jpg" alt="5" style="width:100%">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Connexion" asp-action="Accueil">Atomic Heart</a>
-  </div>
-  <div class="column">
-    <img src="~/images/imagesCarousel/6.jpg" alt="6" style="width:100%">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Connexion" asp-action="Accueil">Returnal</a>
+    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="3">
+        <img src="~/images/imagesCarousel/4.jpg" alt="4" style="width:100%">
+        Valheim
+    </a>
   </div>
 </div>
 
 <div class="row">
   <div class="column">
-    <img src="~/images/imagesCarousel/7.jpg" alt="7" style="width:100%">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Connexion" asp-action="Accueil">Sid Meier's Civilization VI</a>
+    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="4">
+        <img src="~/images/imagesCarousel/5.jpg" alt="5" style="width:100%">
+        Atomic Heart
+    </a>
   </div>
   <div class="column">
-    <img src="~/images/imagesCarousel/8.jpg" alt="8" style="width:100%">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Connexion" asp-action="Accueil">NBA2K23</a>
+    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="5">
+        <img src="~/images/imagesCarousel/6.jpg" alt="6" style="width:100%">
+        Returnal
+    </a>
   </div>
 </div>
 
 <div class="row">
   <div class="column">
-    <img src="~/images/imagesCarousel/9.jpg" alt="9" style="width:100%">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Connexion" asp-action="Accueil">Grand Theft Auto V</a>
+    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="6">
+        <img src="~/images/imagesCarousel/7.jpg" alt="7" style="width:100%">
+        Sid Meier's Civilization VI
+    </a>
   </div>
   <div class="column">
-    <img src="~/images/imagesCarousel/10.jpg" alt="10" style="width:100%">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Connexion" asp-action="Accueil">Resident Evil Village</a>
+    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="7">
+        <img src="~/images/imagesCarousel/8.jpg" alt="8" style="width:100%">
+        NBA2K23
+    </a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="8">
+        <img src="~/images/imagesCarousel/9.jpg" alt="9" style="width:100%">
+        Grand Theft Auto V
+    </a>
+  </div>
+  <div class="column">
+    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="9">
+        <img src="~/images/imagesCarousel/10.jpg" alt="10" style="width:100%">
+        Resident Evil Village
+    </a>
   </div>
 </div>

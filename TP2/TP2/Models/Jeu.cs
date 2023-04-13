@@ -40,10 +40,12 @@ namespace TP2.Models
         public string Auteur { get => auteur; set => auteur = value; }
         public string Producteur { get => producteur; set => producteur = value; }
         public string Extrait { get => extrait; set => extrait = value; }
+        public string Complet { get => complet; set => complet = value; }
         public string Image { get => image; set => image = value; }
 
         [JsonIgnore]
         public List<Evaluation.CoteDeJeu> EvaluationMoyenne { get => evaluationMoyenne; set => evaluationMoyenne = value; }
+        
 
 
         // Constructeur par defaut
