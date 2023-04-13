@@ -5,7 +5,6 @@ namespace TP2
     {
         public static void Main(string[] args)
         {
-            Dev.CreerFichierJSonUtilisateur();
             //Dev.TestDeserializerUtilisateur();
 
             var builder = WebApplication.CreateBuilder(args);

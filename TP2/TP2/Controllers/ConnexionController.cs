@@ -17,7 +17,7 @@ namespace TP2.Controllers
 
         }
 
-        
+        [HttpPost]
         public ActionResult Connexion(string nomUtilisateur, string motDePasse)
         {
             ListeUtilisateurs listeDesUtilisateurs = new ListeUtilisateurs();
@@ -34,6 +34,23 @@ namespace TP2.Controllers
             {
                 return RedirectToAction("Accueil", "Connexion");
             }
+        }
+
+        [HttpPost]
+        public ActionResult CreerCompte(string nomUtilisateur, string motDePasse)
+        {
+
+            ListeUtilisateurs listeDesUtilisateurs = new ListeUtilisateurs();
+            listeDesUtilisateurs.Charger(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
+            bool succes = listeDesUtilisateurs.CreerUtilisateur(nomUtilisateur, motDePasse);
+
+            if (succes)
+            {
+                this.HttpContext.Session.SetString("Utilisateur", JsonConvert.SerializeObject(listeDesUtilisateurs.GetUtilisateurByPseudo(nomUtilisateur)));
+                return RedirectToAction("Accueil", "Home");
+            }
+            
+            return RedirectToAction("Accueil", "Connexion");
         }
     }
 }
