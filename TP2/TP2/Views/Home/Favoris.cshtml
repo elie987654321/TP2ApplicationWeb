@@ -8,10 +8,7 @@
 
 @for (int i = 0; i < Model.Item1.Count; i++)
 {
-
-
-    int prochain = i + 1;
-    
+    int prochain = i + 1; 
 
     int id1 = 0;
     int id2 = 0;
@@ -25,28 +22,29 @@
         }
     }
 
-    @for (int z = 0; z < Model.Item2.Count; z++)
-    {
-        if (Model.Item2[z].NomDuJeu.Equals(Model.Item1[prochain].NomDuJeu))
-        {
-            id2 = z;
-        }
-    }
-
     string lien = (id1 +1) + ".jpg";
-    string lien2 = (id2 + 1) + ".jpg";
 
     <div class="row">
         <div class="column">
-                <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="@id1">
+                <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeuFavori" asp-route-id="@id1">
                     <img src="~/images/imagesCarousel/@lien" alt="@Model.Item1[@i].NomDuJeu" style="width:100%">
                     @Model.Item1[i].NomDuJeu
                 </a>
         </div>
         @if (i + 1 < Model.Item1.Count)
         {
+            @for (int z = 0; z < Model.Item2.Count; z++)
+            {
+                if (Model.Item2[z].NomDuJeu.Equals(Model.Item1[prochain].NomDuJeu))
+                {
+                    id2 = z;
+                }
+            }
+
+            string lien2 = (id2 + 1) + ".jpg";
+
             <div class="column">
-            <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="@id2">
+            <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeuFavori" asp-route-id="@id2">
                     <img src="~/images/imagesCarousel/@lien2" alt="@Model.Item1[@prochain].NomDuJeu" style="width:100%">
                     @Model.Item1[@prochain].NomDuJeu
             </a>

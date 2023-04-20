@@ -90,6 +90,35 @@ namespace TP2.Controllers
             return View();
         }
 
+        public IActionResult FicheDeJeuFavori(int id)
+        {
+            Catalogue catalogue = new Catalogue();
+            catalogue.Ajouter(2, null, Environment.CurrentDirectory + "/wwwroot/json/fichierDeJeux.json");
+
+            if (id >= 0 || id <= catalogue.ListeDeJeux.Count - 1)
+            {
+
+                ViewBag.NomDuJeu = catalogue.ListeDeJeux[id].NomDuJeu;
+                ViewBag.TypeDeJeu = catalogue.ListeDeJeux[id].TypeDeJeu;
+                ViewBag.EvaluationCote = catalogue.ListeDeJeux[id].Evaluation.Cote;
+                ViewBag.EvaluationDescription = catalogue.ListeDeJeux[id].Evaluation.Description;
+                ViewBag.DateProduction = catalogue.ListeDeJeux[id].DateProduction;
+                ViewBag.Duree = catalogue.ListeDeJeux[id].Duree;
+                ViewBag.Auteur = catalogue.ListeDeJeux[id].Auteur;
+                ViewBag.Producteur = catalogue.ListeDeJeux[id].Producteur;
+                ViewBag.Extrait = catalogue.ListeDeJeux[id].Extrait;
+                ViewBag.Complet = catalogue.ListeDeJeux[id].Complet;
+                ViewBag.Image = id + 1 + ".jpg";
+                ViewBag.Id = id;
+            }
+
+            string userString = HttpContext.Session.GetString("Utilisateur");
+            Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
+            ViewBag.Pseudo = user.Pseudo;
+
+            return View();
+        }
+
         public IActionResult AjouterAuFavori(int id)
         {
             Catalogue catalogue = new Catalogue();
@@ -137,33 +166,25 @@ namespace TP2.Controllers
             string userString = HttpContext.Session.GetString("Utilisateur");
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
 
-            bool contientJeu = false;
-            int compteur = 0;
-
             foreach (Utilisateur uti in listeDesUtilisateurs.Liste)
             {
                 if (uti.IdentifiantUnique == user.IdentifiantUnique)
                 {
-                    foreach (var jeu in uti.Favoris)
+                    foreach (var favori in uti.Favoris)
                     {
-                        if (jeu.NomDuJeu.Equals(nomDuJeu))
+                        if (favori.NomDuJeu.Equals(nomDuJeu))
                         {
-                            contientJeu = true;
-                            
+                            Console.WriteLine("allo");
+                            uti.Favoris.Remove(favori);
+                            listeDesUtilisateurs.Sauvegarder(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
+                            break;
                         }
-                        compteur++;
-                        
                     }
 
-                    if (contientJeu)
-                    {
-                        uti.Favoris.Remove(uti.Favoris[compteur]);
-                        listeDesUtilisateurs.Sauvegarder(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
-                    }
                 }
             }
             
-            return RedirectToAction("FicheDeJeu", "Home", new { id = id });
+            return RedirectToAction("Favoris", "Home");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

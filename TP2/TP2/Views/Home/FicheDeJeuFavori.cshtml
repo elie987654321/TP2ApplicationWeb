@@ -26,5 +26,5 @@
 </div>
 
 <div class="divFavori">
-    <a class="btn btn-primary" href="@Url.Action("AjouterAuFavori","Home", new {id=@ViewBag.Id})">Ajouter aux favoris</a>
+    <a class="btn btn-primary" href="@Url.Action("SupprimerDesFavoris","Home", new {id=@ViewBag.Id, nomDuJeu=@ViewBag.NomDuJeu})">Supprimer des favoris</a>
 </div>
