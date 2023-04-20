@@ -16,7 +16,15 @@ namespace TP2.Controllers
 
         public IActionResult Accueil()
         {
+
+
             string userString = HttpContext.Session.GetString("Utilisateur");
+
+            if (userString == null)
+            {
+                return RedirectToAction("Accueil", "Connexion");
+            }
+            
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
 
             ViewBag.Pseudo = user.Pseudo;
@@ -26,6 +34,11 @@ namespace TP2.Controllers
         public IActionResult ListeDeJeux()
         {
             string userString = HttpContext.Session.GetString("Utilisateur");
+
+            if (userString == null)
+            {
+                return RedirectToAction("Accueil", "Connexion");
+            }
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
 
             ViewBag.Pseudo = user.Pseudo;
@@ -35,15 +48,28 @@ namespace TP2.Controllers
         public IActionResult Favoris()
         {
             string userString = HttpContext.Session.GetString("Utilisateur");
+            if (userString == null)
+            {
+                return RedirectToAction("Accueil", "Connexion");
+            }
+
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
 
             ViewBag.Pseudo = user.Pseudo;
 
             return View();
+
+
         }
 
         public IActionResult FicheDeJeu(int id)
         {
+            string userString = HttpContext.Session.GetString("Utilisateur");
+            if (userString == null)
+            {
+                return RedirectToAction("Accueil", "Connexion");
+            }
+
             Catalogue catalogue = new Catalogue();
             catalogue.Ajouter(2, null, Environment.CurrentDirectory + "/wwwroot/json/fichierDeJeuxAuDepart.json");
 
@@ -63,7 +89,6 @@ namespace TP2.Controllers
                 ViewBag.Image = id+1 + ".jpg";
             }
             
-            string userString = HttpContext.Session.GetString("Utilisateur");
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
             ViewBag.Pseudo = user.Pseudo;
 
