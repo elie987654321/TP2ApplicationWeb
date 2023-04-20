@@ -76,3 +76,8 @@ html, body {
     background-image: url('~/images/background.jpg');
     background-size: cover;
 }
+
+footer {
+    position: fixed;
+    bottom: 0px;
+}
