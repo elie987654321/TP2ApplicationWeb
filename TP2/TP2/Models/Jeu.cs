@@ -136,6 +136,7 @@ namespace TP2.Models
             return jeu1.NomDuJeu != jeu2.NomDuJeu;
         }
 
+
         // ToString
         public override string ToString()
         {

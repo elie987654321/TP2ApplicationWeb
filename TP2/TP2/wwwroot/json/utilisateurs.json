@@ -8,18 +8,49 @@
     "Role": "Utilisateur",
     "Favoris": [
       {
-        "NomDuJeu": "Un jeu",
-        "TypeDeJeu": "Monde_Ouvert",
+        "NomDuJeu": "Borderlands 3",
+        "TypeDeJeu": "FPS",
         "Evaluation": {
-          "Cote": 0,
-          "Description": ""
+          "Cote": "TRES_BON",
+          "Description": "Le shooter-looter est de retour avec ses trilliards de flingues pour une aventure complètement folle ! Affrontez de nouveaux mondes et ennemis dans la peau de l'un des quatre Chasseurs de l'Arche proposés, avec chacun ses propres compétences et options de personnalisation."
         },
-        "DateProduction": "2023-04-13T15:07:47.1357296-04:00",
-        "Duree": "20192 heures",
-        "Auteur": "Bob",
-        "Producteur": "Bob le producteur",
-        "Extrait": "",
-        "Image": ""
+        "DateProduction": "2020-03-13T00:00:00",
+        "Duree": "Environ 35 heures",
+        "Auteur": "2K",
+        "Producteur": "Gearbox Software",
+        "Extrait": "https://www.youtube.com/watch?v=zW8rXQnKirE",
+        "Complet": "https://store.steampowered.com/app/397540/Borderlands_3/",
+        "Image": "https://images5.alphacoders.com/100/thumb-1920-1004495.jpg"
+      },
+      {
+        "NomDuJeu": "Atomic Heart",
+        "TypeDeJeu": "Horreur",
+        "Evaluation": {
+          "Cote": "TRES_BON",
+          "Description": "Dans un monde dystopique aussi déjanté que sublime, armez-vous de votre gant de pouvoirs, de votre arsenal d’armes blanches et de votre artillerie à la pointe de la technologie, et lancez-vous dans des affrontements explosifs et mortellement nerveux."
+        },
+        "DateProduction": "2023-02-20T00:00:00",
+        "Duree": "Environ 25 heures",
+        "Auteur": "Focus Entertainment",
+        "Producteur": "Mundfish",
+        "Extrait": "https://www.youtube.com/watch?v=h8F4hnR1FoE",
+        "Complet": "https://store.steampowered.com/app/668580/Atomic_Heart/",
+        "Image": "https://news.xbox.com/en-us/wp-content/uploads/sites/2/2022/12/ATOMIC-_HEART_Store_Featured_JPG-af8c6994d37e4bfb590d.jpg"
+      },
+      {
+        "NomDuJeu": "Returnal",
+        "TypeDeJeu": "Roguelike",
+        "Evaluation": {
+          "Cote": "TRES_BON",
+          "Description": "BRISEZ LE CYCLE Combattez pour votre survie dans ce jeu de tir à la troisième personne récompensé qui apporte l'histoire de Selene. Affrontez les défis du genre roguelike. Faites face à vos ennemis dans un déluge de balles. Voyagez dans Returnal™ avec un autre joueur."
+        },
+        "DateProduction": "2023-02-15T00:00:00",
+        "Duree": "Environ 19 heures",
+        "Auteur": "PlayStation PC LLC",
+        "Producteur": "Housemarque",
+        "Extrait": "https://www.youtube.com/watch?v=BcnRCjHViLw",
+        "Complet": "https://store.steampowered.com/app/1649240/Returnal/",
+        "Image": "https://images.alphacoders.com/113/thumb-1920-1137684.jpg"
       }
     ],
     "Evaluations": [
@@ -30,20 +61,20 @@
     ]
   },
   {
-    "IdentifiantUnique": "",
+    "IdentifiantUnique": "123",
     "Pseudo": "test2",
     "MotDePasse": "secret2",
-    "Nom": "",
+    "Nom": "asdq",
     "Prenom": "",
     "Role": "Utilisateur",
     "Favoris": [],
     "Evaluations": []
   },
   {
-    "IdentifiantUnique": "",
+    "IdentifiantUnique": "qwe",
     "Pseudo": "test",
     "MotDePasse": "12345",
-    "Nom": "",
+    "Nom": "qwd",
     "Prenom": "",
     "Role": "Utilisateur",
     "Favoris": [],

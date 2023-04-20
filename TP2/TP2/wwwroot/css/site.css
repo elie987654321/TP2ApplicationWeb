@@ -72,7 +72,12 @@ img{
     font-size: 80px;
 }
 
-html, body {
-    background-image: url('~/images/background.jpg');
-    background-size: cover;
+.divFavori{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.ajouteFavori {
+    width: 25%;
+    font-size:30px;
 }

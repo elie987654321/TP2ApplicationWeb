@@ -13,3 +13,7 @@ $(document).ready(function () {
         count = 1 - count;
     });
 });
+
+$('.ajouteFavori').on('click', function () {
+
+});

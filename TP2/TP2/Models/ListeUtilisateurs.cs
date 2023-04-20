@@ -7,10 +7,14 @@ namespace TP2.Models
     {
         private  List<Utilisateur> liste;
 
+        
+
         public ListeUtilisateurs()
         {
             liste = new List<Utilisateur>();
         }
+
+        public List<Utilisateur> Liste { get => liste; set => liste = value; }
 
         public void Sauvegarder(string fichier)
         {
@@ -34,6 +38,8 @@ namespace TP2.Models
                 Console.WriteLine(invalide);
             }
         }
+
+
 
         public void Charger(string fichier)
         {

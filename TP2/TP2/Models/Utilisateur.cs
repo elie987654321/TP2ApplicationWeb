@@ -71,6 +71,5 @@ namespace TP2.Models
             this.evaluations.Add(evaluation);
         }
 
-       
     }
 }
