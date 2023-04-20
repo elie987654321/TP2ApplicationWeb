@@ -33,10 +33,31 @@ namespace TP2
 
             app.UseAuthorization();
 
+           
+
+
+            app.MapControllerRoute(
+                name: "Bienvenue",
+                pattern: "Bienvenue",
+                defaults: new {controller = "Home", action="Accueil" }
+                );
+
+            app.MapControllerRoute(
+                name: "TousLesJeux",
+                pattern: "TousLesJeux",
+                defaults: new {controller = "Home", action="ListeDeJeux"}
+                );
+
+            app.MapControllerRoute(
+                name: "VosFavoris",
+                pattern: "VosFavoris",
+                defaults: new {controller = "Home", action="Favoris" }
+                );
+
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Connexion}/{action=Accueil}/{id?}");
-
+                pattern: "{controller=Connexion}/{action=Accueil}");
+            
             app.Run();
         }
     }
