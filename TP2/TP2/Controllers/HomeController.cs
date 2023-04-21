@@ -15,6 +15,7 @@ namespace TP2.Controllers
             _logger = logger;
         }
 
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Accueil()
         {
 
@@ -32,6 +33,7 @@ namespace TP2.Controllers
             return View();
         }
 
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult ListeDeJeux()
         {
             Catalogue catalogue = new Catalogue();
@@ -52,6 +54,7 @@ namespace TP2.Controllers
             return View(model);
         }
 
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Favoris()
         {
             Catalogue catalogue = new Catalogue();
@@ -85,6 +88,7 @@ namespace TP2.Controllers
             return View(model);
         }
 
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult FicheDeJeu(int id)
         {
             string userString = HttpContext.Session.GetString("Utilisateur");
@@ -119,6 +123,7 @@ namespace TP2.Controllers
             return View();
         }
 
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult FicheDeJeuFavori(int id)
         {
             Catalogue catalogue = new Catalogue();
@@ -147,6 +152,8 @@ namespace TP2.Controllers
 
             return View();
         }
+
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
 
         public IActionResult AjouterAuFavori(int id)
         {
@@ -187,6 +194,7 @@ namespace TP2.Controllers
             return RedirectToAction("FicheDeJeu", "Home", new {id=id});
         }
 
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult SupprimerDesFavoris(int id, string nomDuJeu)
         {
             ListeUtilisateurs listeDesUtilisateurs = new ListeUtilisateurs();
@@ -221,5 +229,13 @@ namespace TP2.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Deconnexion()
+        {
+            this.HttpContext.Session.Remove("Utilisateur");
+            return RedirectToAction("Accueil", "Connexion");
+        }
     }
+
 }

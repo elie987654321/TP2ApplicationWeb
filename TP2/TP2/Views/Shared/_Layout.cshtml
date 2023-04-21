@@ -28,8 +28,8 @@
                     </ul>
                 </div>
 
-                <a id="deconnecter" class="nav-link text-dark" asp-area="" asp-controller="Connexion" asp-action="Accueil">Se déconnecter (@ViewBag.Pseudo)</a>
-
+                <a id="deconnecter" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Deconnexion">Se déconnecter (@ViewBag.Pseudo)</a>
+                <input type="hidden" />
             </div>
         </nav>
     </header>
@@ -46,7 +46,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    
+    <input name="refreshed" value="no" id="refreshed" />
     @await RenderSectionAsync("Scripts", required: false)
-
 </body>
 </html>

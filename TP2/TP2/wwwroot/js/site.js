@@ -14,6 +14,11 @@ $(document).ready(function () {
     });
 });
 
+
 $('.ajouteFavori').on('click', function () {
 
+});
+
+$(window).load(function () {
+    Response.Cache.SetCacheability(HttpCacheability.NoCache)
 });
