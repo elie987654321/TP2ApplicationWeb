@@ -34,16 +34,22 @@ namespace TP2.Controllers
 
         public IActionResult ListeDeJeux()
         {
-            string userString = HttpContext.Session.GetString("Utilisateur");
+            Catalogue catalogue = new Catalogue();
+            catalogue.Ajouter(2, null, Environment.CurrentDirectory + "/wwwroot/json/fichierDeJeux.json");
 
+            string userString = HttpContext.Session.GetString("Utilisateur");
             if (userString == null)
             {
                 return RedirectToAction("Accueil", "Connexion");
             }
+
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
 
+            List<Jeu> model = new List<Jeu>(catalogue.ListeDeJeux);
+
             ViewBag.Pseudo = user.Pseudo;
-            return View();
+
+            return View(model);
         }
 
         public IActionResult Favoris()

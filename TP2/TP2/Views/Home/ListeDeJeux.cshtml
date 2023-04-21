@@ -1,83 +1,38 @@
-﻿
+﻿@model List<Jeu>
+
 @{
     ViewData["Title"] = "Liste de jeux";
 }
 
 <h1 class="text-dark texteListe">Nos jeux</h1>
 
-<div class="row">
-  <div class="column">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="0">
-        <img src="~/images/imagesCarousel/1.jpg" alt="1" style="width:100%">
-        Hogwarts Legacy
-    </a>
-  </div>
-  <div class="column">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="1">
-        <img src="~/images/imagesCarousel/2.jpg" alt="2" style="width:100%">
-        Borderlands 3
-    </a>
-  </div>
-</div>
+@for (int i = 0; i < Model.Count; i++)
+{
+    int prochain = i + 1; 
 
-<div class="row">
-  <div class="column">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="2">
-        <img src="~/images/imagesCarousel/3.jpg" alt="3" style="width:100%">
-        Stardew Valley
-        </a>
-  </div>
-  <div class="column">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="3">
-        <img src="~/images/imagesCarousel/4.jpg" alt="4" style="width:100%">
-        Valheim
-    </a>
-  </div>
-</div>
+    string lien = (i +1) + ".jpg";
+    string lien2 = (prochain + 1) + ".jpg";
 
-<div class="row">
-  <div class="column">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="4">
-        <img src="~/images/imagesCarousel/5.jpg" alt="5" style="width:100%">
-        Atomic Heart
-    </a>
-  </div>
-  <div class="column">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="5">
-        <img src="~/images/imagesCarousel/6.jpg" alt="6" style="width:100%">
-        Returnal
-    </a>
-  </div>
-</div>
+    <div class="row">
+        <div class="column">
+                <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="@i">
+                    <img src="~/images/imagesCarousel/@lien" alt="@Model[@i].NomDuJeu" style="width:100%">
+                    @Model[i].NomDuJeu
+                </a>
+        </div>
+        @if (i + 1 < Model.Count)
+        {
+            <div class="column">
+            <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="@prochain">
+                    <img src="~/images/imagesCarousel/@lien2" alt="@Model[@prochain].NomDuJeu" style="width:100%">
+                    @Model[@prochain].NomDuJeu
+            </a>
+            </div>
+        }  
+    </div>
 
-<div class="row">
-  <div class="column">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="6">
-        <img src="~/images/imagesCarousel/7.jpg" alt="7" style="width:100%">
-        Sid Meier's Civilization VI
-    </a>
-  </div>
-  <div class="column">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="7">
-        <img src="~/images/imagesCarousel/8.jpg" alt="8" style="width:100%">
-        NBA2K23
-    </a>
-  </div>
-</div>
+    i++;
+}
 
-<div class="row">
-  <div class="column">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="8">
-        <img src="~/images/imagesCarousel/9.jpg" alt="9" style="width:100%">
-        Grand Theft Auto V
-    </a>
-  </div>
-  <div class="column">
-    <a class="nav-link text-dark liste" asp-area="" asp-controller="Home" asp-action="FicheDeJeu" asp-route-id="9">
-        <img src="~/images/imagesCarousel/10.jpg" alt="10" style="width:100%">
-        Resident Evil Village
-    </a>
-  </div>
-</div>
 
-@Html.Partial("Copyright")
+

@@ -21,36 +21,6 @@
         "Extrait": "https://www.youtube.com/watch?v=M8ApyJqnME0",
         "Complet": "https://store.steampowered.com/app/990080/Hogwarts_Legacy_LHritage_de_Poudlard/?l=french",
         "Image": "https://w0.peakpx.com/wallpaper/461/931/HD-wallpaper-hogwarts-legacy-poster.jpg"
-      },
-      {
-        "NomDuJeu": "NBA 2K23",
-        "TypeDeJeu": "Sport",
-        "Evaluation": {
-          "Cote": "MOYEN",
-          "Description": "Soyez à la hauteur de ce qu’on attend de vous dans NBA 2K23. Le mode scénario permet de suivre votre joueur, qui sera surnommé MP, tout au long de sa carrière de basketball."
-        },
-        "DateProduction": "2022-09-08T00:00:00",
-        "Duree": "Environ 12 heures",
-        "Auteur": "2K",
-        "Producteur": "Visual Concepts",
-        "Extrait": "https://www.youtube.com/watch?v=vE_oLyx25IU",
-        "Complet": "https://store.steampowered.com/app/1919590/NBA_2K23/",
-        "Image": "https://nba2kw.com/wp-content/uploads/2022/06/nba-2k23-cover-athlete-devin-booker-standard-edition.jpg"
-      },
-      {
-        "NomDuJeu": "Atomic Heart",
-        "TypeDeJeu": "Horreur",
-        "Evaluation": {
-          "Cote": "TRES_BON",
-          "Description": "Dans un monde dystopique aussi déjanté que sublime, armez-vous de votre gant de pouvoirs, de votre arsenal d’armes blanches et de votre artillerie à la pointe de la technologie, et lancez-vous dans des affrontements explosifs et mortellement nerveux."
-        },
-        "DateProduction": "2023-02-20T00:00:00",
-        "Duree": "Environ 25 heures",
-        "Auteur": "Focus Entertainment",
-        "Producteur": "Mundfish",
-        "Extrait": "https://www.youtube.com/watch?v=h8F4hnR1FoE",
-        "Complet": "https://store.steampowered.com/app/668580/Atomic_Heart/",
-        "Image": "https://news.xbox.com/en-us/wp-content/uploads/sites/2/2022/12/ATOMIC-_HEART_Store_Featured_JPG-af8c6994d37e4bfb590d.jpg"
       }
     ],
     "Evaluations": [
