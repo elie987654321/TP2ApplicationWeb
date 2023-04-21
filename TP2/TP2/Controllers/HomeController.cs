@@ -129,6 +129,12 @@ namespace TP2.Controllers
             Catalogue catalogue = new Catalogue();
             catalogue.Ajouter(2, null, Environment.CurrentDirectory + "/wwwroot/json/fichierDeJeux.json");
 
+            string userString = HttpContext.Session.GetString("Utilisateur");
+            if (userString == null)
+            {
+                return RedirectToAction("Accueil", "Connexion");
+            }
+
             if (id >= 0 || id <= catalogue.ListeDeJeux.Count - 1)
             {
 
@@ -146,8 +152,8 @@ namespace TP2.Controllers
                 ViewBag.Id = id;
             }
 
-            string userString = HttpContext.Session.GetString("Utilisateur");
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
+
             ViewBag.Pseudo = user.Pseudo;
 
             return View();
@@ -164,6 +170,10 @@ namespace TP2.Controllers
             listeDesUtilisateurs.Charger(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
 
             string userString = HttpContext.Session.GetString("Utilisateur");
+            if (userString == null)
+            {
+                return RedirectToAction("Accueil", "Connexion");
+            }
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
 
             bool contientJeu = false;
@@ -201,6 +211,11 @@ namespace TP2.Controllers
             listeDesUtilisateurs.Charger(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
 
             string userString = HttpContext.Session.GetString("Utilisateur");
+            if (userString == null)
+            {
+                return RedirectToAction("Accueil", "Connexion");
+            }
+
             Utilisateur user = JsonConvert.DeserializeObject<Utilisateur>(userString);
 
             foreach (Utilisateur uti in listeDesUtilisateurs.Liste)

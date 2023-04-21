@@ -8,19 +8,19 @@
     "Role": "Utilisateur",
     "Favoris": [
       {
-        "NomDuJeu": "Hogwarts Legacy : L'Héritage de Poudlard",
-        "TypeDeJeu": "Monde_Ouvert",
+        "NomDuJeu": "Borderlands 3",
+        "TypeDeJeu": "FPS",
         "Evaluation": {
-          "Cote": "EXCELLENT",
-          "Description": "Hogwarts Legacy : L'Héritage de Poudlard est un RPG d'action-aventure immersif en monde ouvert. Vous pouvez prendre le contrôle et vous retrouver au centre de votre propre aventure dans le Monde des sorciers."
+          "Cote": "TRES_BON",
+          "Description": "Le shooter-looter est de retour avec ses trilliards de flingues pour une aventure complètement folle ! Affrontez de nouveaux mondes et ennemis dans la peau de l'un des quatre Chasseurs de l'Arche proposés, avec chacun ses propres compétences et options de personnalisation."
         },
-        "DateProduction": "2023-02-10T00:00:00",
+        "DateProduction": "2020-03-13T00:00:00",
         "Duree": "Environ 35 heures",
-        "Auteur": "Warner Bros. Games",
-        "Producteur": "Avalanche Software",
-        "Extrait": "https://www.youtube.com/watch?v=M8ApyJqnME0",
-        "Complet": "https://store.steampowered.com/app/990080/Hogwarts_Legacy_LHritage_de_Poudlard/?l=french",
-        "Image": "https://w0.peakpx.com/wallpaper/461/931/HD-wallpaper-hogwarts-legacy-poster.jpg"
+        "Auteur": "2K",
+        "Producteur": "Gearbox Software",
+        "Extrait": "https://www.youtube.com/watch?v=zW8rXQnKirE",
+        "Complet": "https://store.steampowered.com/app/397540/Borderlands_3/",
+        "Image": "https://images5.alphacoders.com/100/thumb-1920-1004495.jpg"
       }
     ],
     "Evaluations": [
