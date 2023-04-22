@@ -59,5 +59,45 @@
     "Role": "Utilisateur",
     "Favoris": [],
     "Evaluations": []
+  },
+  {
+    "IdentifiantUnique": "id",
+    "Pseudo": "pseudo",
+    "MotDePasse": "secret",
+    "Nom": "nom",
+    "Prenom": "prenom",
+    "Role": "Utilisateur",
+    "Favoris": [],
+    "Evaluations": []
+  },
+  {
+    "IdentifiantUnique": "idTest",
+    "Pseudo": "pseudoTest",
+    "MotDePasse": "secretTest",
+    "Nom": "nomTest",
+    "Prenom": "prenomTest",
+    "Role": "Utilisateur",
+    "Favoris": [],
+    "Evaluations": []
+  },
+  {
+    "IdentifiantUnique": "qwqewr",
+    "Pseudo": "reqwrqw",
+    "MotDePasse": "rewqrq",
+    "Nom": "ewqrewr",
+    "Prenom": "rewqrqw",
+    "Role": "Utilisateur",
+    "Favoris": [],
+    "Evaluations": []
+  },
+  {
+    "IdentifiantUnique": "idNewForm",
+    "Pseudo": "PseudoNewForm",
+    "MotDePasse": "motDePasseNewForm",
+    "Nom": "NomNewform",
+    "Prenom": "PrenoNewForm",
+    "Role": "Utilisateur",
+    "Favoris": [],
+    "Evaluations": []
   }
 ]

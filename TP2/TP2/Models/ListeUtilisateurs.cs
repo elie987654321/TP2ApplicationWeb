@@ -85,8 +85,13 @@ namespace TP2.Models
         }
 
         //Retourne false si l'utilisateur ne peut pas etre creer
-        public bool CreerUtilisateur(string pseudo, string motDePasse)
+        public bool CreerUtilisateur(string identifiantUnique,string pseudo, string motDePasse, string nom, string prenom )
         {
+            if (identifiantUnique == null || identifiantUnique == "")
+            {
+                return false;
+            }
+
             //Verifie qu'un pseudo valide a été entrer
             if (pseudo == null || pseudo == "")
             {
@@ -99,6 +104,18 @@ namespace TP2.Models
             {
                 return false;
             }
+
+
+            if (prenom == null || prenom == "")
+            {
+                return false;
+            }
+
+            if (nom == null || nom == "")
+            {
+                return false;
+            }
+
 
 
             //Verifie si le nom d'utilisateur existe deja
@@ -119,8 +136,11 @@ namespace TP2.Models
 
             //Ajout de l'utilisateur
             Utilisateur utilisateur = new Utilisateur();
+            utilisateur.IdentifiantUnique = identifiantUnique;
             utilisateur.Pseudo = pseudo;
             utilisateur.MotDePasse = motDePasse;
+            utilisateur.Prenom = prenom;
+            utilisateur.Nom = nom;
             this.AjouterUtilisateur(utilisateur);
             this.Sauvegarder(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
 

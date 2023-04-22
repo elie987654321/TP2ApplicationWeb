@@ -43,16 +43,17 @@ namespace TP2.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreerCompte(string nomUtilisateur, string motDePasse)
+        public ActionResult CreerCompte(string identifiantUnique, string pseudo, string prenom, string nom, string password)
         {
-
+            
             ListeUtilisateurs listeDesUtilisateurs = new ListeUtilisateurs();
             listeDesUtilisateurs.Charger(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
-            bool succes = listeDesUtilisateurs.CreerUtilisateur(nomUtilisateur, motDePasse);
+            bool succes = listeDesUtilisateurs.CreerUtilisateur(identifiantUnique,pseudo, password, nom, prenom);
+
 
             if (succes)
             {
-                this.HttpContext.Session.SetString("Utilisateur", JsonConvert.SerializeObject(listeDesUtilisateurs.GetUtilisateurByPseudo(nomUtilisateur)));
+                this.HttpContext.Session.SetString("Utilisateur", JsonConvert.SerializeObject(listeDesUtilisateurs.GetUtilisateurByPseudo(pseudo)));
                 return RedirectToAction("Accueil", "Home" );
             }
             
