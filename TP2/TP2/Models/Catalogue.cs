@@ -149,17 +149,5 @@ namespace TP2.Models
 
         }
 
-        // ToString
-        public override string ToString()
-        {
-            string texte = "";
-
-            foreach (Jeu jeu in this.listeDeJeux)
-            {
-                texte += jeu + "\n";
-
-            }
-            return texte;
-        }
     }
 }

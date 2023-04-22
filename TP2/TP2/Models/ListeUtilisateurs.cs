@@ -43,7 +43,25 @@ namespace TP2.Models
 
         public void Charger(string fichier)
         {
-           this.liste = JsonConvert.DeserializeObject<List<Utilisateur>>(File.ReadAllText(@fichier));
+            string invalide = "Votre fichier n'est pas valide, veuillez entrez un fichier valide";
+
+            if (System.IO.Path.HasExtension(fichier))
+            {
+                if (File.Exists(fichier))
+                {
+
+                    this.liste = JsonConvert.DeserializeObject<List<Utilisateur>>(File.ReadAllText(@fichier));
+                    Console.WriteLine("La liste a bien ete chargée");
+                }
+                else
+                {
+                    Console.WriteLine(invalide);
+                }
+            }
+            else
+            {
+                Console.WriteLine(invalide);
+            }
         }
 
         public void AjouterUtilisateur(Utilisateur utilisateur)

@@ -1,0 +1,25 @@
+La liste se sauvegarde correctement
+	si le chemin es invalide, message d'erreur retourner
+	si le fichier n'a pas la bonne extension, retourne le message d'erreur
+	si le fichier est trouvé, sauvegarde la liste dans un fichier
+	
+
+La liste se charge correctement		
+	si le chemin es invalide, message d'erreur retourner
+	si le fichier n'a pas la bonne extension, retourne le message d'erreur
+	si le fichier est trouvé, sauvegarde la liste dans un fichier
+
+
+L'ajout d'utilisateur fonctionne
+	si on ajoute un utilisateur, celui ci est ajouter correctement a la liste
+
+La suppression d'utilisateur fonctionne
+	si on supprime un utilisateur, celui-ci est supprimer correctement de la liste
+
+
+La connexion fonctionne
+
+La creation d'utilisateur fonctionne
+
+
+On peut aller chercher un utilisateur grace a son pseudo
