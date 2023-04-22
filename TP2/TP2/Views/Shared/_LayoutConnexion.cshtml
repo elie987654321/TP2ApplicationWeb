@@ -26,12 +26,10 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-    <footer>@Html.Partial("Copyright")</footer>
+    <main role="main" class="pb-3 h-100" >
+        @RenderBody()
+    </main>
+    
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script> <!-- Popper.js library -->

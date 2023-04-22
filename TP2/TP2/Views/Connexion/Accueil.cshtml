@@ -3,14 +3,39 @@
     Layout = "~/views/shared/_LayoutConnexion.cshtml";
 }
 
-<form asp-controller="Connexion" >
-    <p style="color:red">@Html.Raw(ViewBag.message)</p>
-    <label for="nomUtilisateur">Nom d'utilisateur</label>
-    <input type="text" id="nomUtilisateur" name="nomUtilisateur"/>
-    <label for="motDePasse">Mot de passe</label>
-    <input type="password" id="motDePasse" name="motDePasse"/>
-    <input type="submit" value="Se connecter" asp-action="Connexion"/>
-</form>
-
-<p>Pour recuperer un mot de passe perdu, contacter l'administrateur a bobbob44@gmail.com</p>
-<p>@Html.ActionLink("Créer un compte", "CreerCompte")</p>
+<div class="container-fluid">
+    <div class="row rowAccueilNonConnecter">
+        <div class="col-3 infoAccueil">
+            <div class="container">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <h2>Hogward legacy maintenant disponible!!</h2>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <p>Une femeture du site pour des raisons de maintenance aura lieu mercredis prochain</p>
+            </div>
+        </div>
+        <div class="col-9">
+            <form asp-controller="Connexion" >            
+                <p style="color:red">@Html.Raw(ViewBag.message)</p>
+                <label for="nomUtilisateur">Nom d'utilisateur</label>
+                <input type="text" id="nomUtilisateur" name="nomUtilisateur"/>
+                <label for="motDePasse">Mot de passe</label>
+                <input type="password" id="motDePasse" name="motDePasse"/>
+                <input type="submit" value="Se connecter" asp-action="Connexion"/>
+            </form>
+            <p>@Html.ActionLink("Créer un compte", "CreerCompte")</p>
+            <br/>
+            <br/>
+            <p>Pour recuperer un mot de passe perdu, contacter l'administrateur a bobbob44@gmail.com</p>            
+        <div class="footerAccueilNonConnecte">
+            @Html.Partial("Copyright")
+        </div>
+    </div>
+</div>

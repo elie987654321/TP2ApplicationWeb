@@ -86,3 +86,19 @@ footer {
     position: absolute;
     bottom: 0px;
 }
+
+
+.infoAccueil 
+{
+    background-color: lightblue;
+}
+
+
+.rowAccueilNonConnecter {
+    height: 700px;
+}
+
+.footerAccueilNonConnecte {
+    position : absolute;
+    bottom: 100px;
+}
