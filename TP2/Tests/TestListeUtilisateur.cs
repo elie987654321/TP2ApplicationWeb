@@ -221,10 +221,20 @@ namespace TestProject1
 
         [Test]
         public void TestObtenirUtilisateurByPseudoExistePas()
-        { }
+        {
+            ListeUtilisateurs liste = CreerListeUtilisateurTest();
+            Utilisateur userTest = liste.GetUtilisateurByPseudo("id123");
+
+            Assert.IsNull(userTest);
+        }
 
         [Test]
         public void TestObtenirUtilisateurByPseudo()
-        { }
+        {
+            ListeUtilisateurs liste = CreerListeUtilisateurTest();
+            Utilisateur userTest = liste.GetUtilisateurByPseudo("haha");
+            
+            Assert.AreEqual("id123", userTest.IdentifiantUnique);
+        }
     }
 }
