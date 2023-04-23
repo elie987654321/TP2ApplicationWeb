@@ -62,7 +62,6 @@ namespace TestCatalogue
             catalogue.Ajouter(2, null, fichierJson1);
             Assert.IsTrue(catalogue.ToString().Contains(jeu1.ToString()));
             Assert.IsTrue(catalogue.ToString().Contains(jeu2.ToString()));
-            Console.WriteLine(catalogue.ToString());
 
         }
 
