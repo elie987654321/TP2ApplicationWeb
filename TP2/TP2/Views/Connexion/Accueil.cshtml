@@ -24,11 +24,20 @@
         <div class="col-9">
             <form asp-controller="Connexion" >            
                 <p style="color:red">@Html.Raw(ViewBag.message)</p>
-                <label for="nomUtilisateur">Nom d'utilisateur</label>
-                <input type="text" id="nomUtilisateur" name="nomUtilisateur"/>
+                <div class="form-group w-25">
+                    <label for="nomUtilisateur">Nom d'utilisateur</label>
+                    <input class="form-control" type="text" id="nomUtilisateur" name="nomUtilisateur"/>
+                </div>
+                
+                <div class="form-group w-25">
                 <label for="motDePasse">Mot de passe</label>
-                <input type="password" id="motDePasse" name="motDePasse"/>
-                <input type="submit" value="Se connecter" asp-action="Connexion"/>
+                <input class="form-control" type="password" id="motDePasse" name="motDePasse"/>
+                </div>
+
+                <div class="form-group w-25 connexiion">
+                    <input type="submit" value="Se connecter" asp-action="Connexion"/>
+                </div>
+                
             </form>
             <p>@Html.ActionLink("Créer un compte", "CreerCompte")</p>
             <br/>

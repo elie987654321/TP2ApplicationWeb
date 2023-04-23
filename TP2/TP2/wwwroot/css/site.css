@@ -64,6 +64,7 @@ img{
 .texteFiche {
     font-family: Arial, sans-serif;
     font-size: 20px;
+    color: black;
 }
 
 .texteListe {
@@ -110,3 +111,17 @@ footer {
 
 }
 
+.bg-image {
+    background-image: url('../images/backgroundConnexion.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bodyConnexion {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.connexiion{
+    padding-top: 10px;
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yqlx3Pe1Z0zlV0xl7w//1d6sZnttHEtvV3BdLYowgmg=",
+  "Hash": "LfS5k/BaBl7rSCAJmHzWUmnJp2VkgeawGFNb+Dc8ySc=",
   "Source": "TP2",
   "BasePath": "_content/TP2",
   "Mode": "Default",
@@ -85,12 +85,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "E:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\images\\background.jpg",
+      "Identity": "E:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\images\\backgroundConnexion.jpg",
       "SourceId": "TP2",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\",
       "BasePath": "_content/TP2",
-      "RelativePath": "images/background.jpg",
+      "RelativePath": "images/backgroundConnexion.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,7 +99,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\background.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\backgroundConnexion.jpg"
     },
     {
       "Identity": "E:\\Hiver2023\\420-4B6-LI APPLICATIONS WEB I\\TP2\\TP2ApplicationWeb\\TP2\\TP2\\wwwroot\\images\\imagesCarousel\\1.jpg",
