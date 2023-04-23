@@ -1,5 +1,5 @@
 La liste se sauvegarde correctement
-	si le chemin es invalide, message d'erreur retourner
+	si le chemin est invalide, message d'erreur retourner
 	si le fichier n'a pas la bonne extension, retourne le message d'erreur
 	si le fichier est trouvé, sauvegarde la liste dans un fichier
 	
@@ -18,8 +18,21 @@ La suppression d'utilisateur fonctionne
 
 
 La connexion fonctionne
+	si le l'identifiant n'est pas bon, retourne null
+	si le mot de passe n'est pas bon, retourne null
+	si le mot de passe et l'identifiant sont bon, 
+		retourne l'utilisateur
 
 La creation d'utilisateur fonctionne
+	si identifiant null, retourne false
+	si identifiant vide, retourne false
+	si prenom null retourne false
+	si nom null, retourne false
+	si le nom d'utilisateur existe deja, retourne false
+	
+	si tout est ok, crée l'utilisateur
 
 
 On peut aller chercher un utilisateur grace a son pseudo
+	si le pseudo ne correspond a aucun utilisateur, retourne null
+	si le pseudo correspon a un utilisateur, retourne true

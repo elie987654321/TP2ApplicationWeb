@@ -68,17 +68,17 @@ namespace TP2.Models
         {
             this.liste.Add(utilisateur);
         }
-
+        /*
         public void SupprimerUtilisateur(string identifiantUnique)
         {
             this.liste = (List<Utilisateur>)
                         ( from x in this.liste
                          where x.IdentifiantUnique != identifiantUnique
                          select x);
-        }
+        }*/
 
 
-        //Retourne null si l'utilisateur la combinaison pseudo/mot de passe ne correspond a aucun utilisateur
+        //Retourne null si la combinaison pseudo/mot de passe ne correspond a aucun utilisateur
         public Utilisateur Connexion(string identifiant, string motDePasse)
         {
             bool trouve = false;
@@ -103,7 +103,7 @@ namespace TP2.Models
         }
 
         //Retourne false si l'utilisateur ne peut pas etre creer
-        public bool CreerUtilisateur(string identifiantUnique,string pseudo, string motDePasse, string nom, string prenom )
+        public bool CreerUtilisateur(string identifiantUnique,string pseudo, string motDePasse, string nom, string prenom, string emplacementFichier = "")
         {
             if (identifiantUnique == null || identifiantUnique == "")
             {
@@ -143,7 +143,7 @@ namespace TP2.Models
             do
             {
                 utilisateurATester = this.liste[i];
-                trouve = utilisateurATester.Pseudo == pseudo;
+                trouve = utilisateurATester.IdentifiantUnique == identifiantUnique;
                 i++;
             }
             while (!trouve && i < liste.Count - 1);
@@ -160,14 +160,13 @@ namespace TP2.Models
             utilisateur.Prenom = prenom;
             utilisateur.Nom = nom;
             this.AjouterUtilisateur(utilisateur);
-            this.Sauvegarder(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
+            this.Sauvegarder(emplacementFichier == "" ? Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json" : emplacementFichier);
 
             return true;
         }
 
         public Utilisateur GetUtilisateurByPseudo(string pseudo)
         {
-            bool trouve = false;
             Utilisateur u = null;
 
             int i = 0;

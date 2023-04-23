@@ -3,3 +3,8 @@ C:\Users\1445131\Documents\GitHub\TP2ApplicationWeb\TP2\ProjetDeTestNUnit\obj\De
 C:\Users\1445131\Documents\GitHub\TP2ApplicationWeb\TP2\ProjetDeTestNUnit\obj\Debug\net6.0\ProjetDeTestNUnit.AssemblyInfoInputs.cache
 C:\Users\1445131\Documents\GitHub\TP2ApplicationWeb\TP2\ProjetDeTestNUnit\obj\Debug\net6.0\ProjetDeTestNUnit.AssemblyInfo.cs
 C:\Users\1445131\Documents\GitHub\TP2ApplicationWeb\TP2\ProjetDeTestNUnit\obj\Debug\net6.0\ProjetDeTestNUnit.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\Documents\GitHub\TP2ApplicationWeb\TP2\ProjetDeTestNUnit\obj\Debug\net6.0\ProjetDeTestNUnit.csproj.AssemblyReference.cache
+C:\Users\Utilisateur\Documents\GitHub\TP2ApplicationWeb\TP2\ProjetDeTestNUnit\obj\Debug\net6.0\ProjetDeTestNUnit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utilisateur\Documents\GitHub\TP2ApplicationWeb\TP2\ProjetDeTestNUnit\obj\Debug\net6.0\ProjetDeTestNUnit.AssemblyInfoInputs.cache
+C:\Users\Utilisateur\Documents\GitHub\TP2ApplicationWeb\TP2\ProjetDeTestNUnit\obj\Debug\net6.0\ProjetDeTestNUnit.AssemblyInfo.cs
+C:\Users\Utilisateur\Documents\GitHub\TP2ApplicationWeb\TP2\ProjetDeTestNUnit\obj\Debug\net6.0\ProjetDeTestNUnit.csproj.CoreCompileInputs.cache
