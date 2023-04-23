@@ -226,7 +226,6 @@ namespace TP2.Controllers
                     {
                         if (favori.NomDuJeu.Equals(nomDuJeu))
                         {
-                            Console.WriteLine("allo");
                             uti.Favoris.Remove(favori);
                             listeDesUtilisateurs.Sauvegarder(Environment.CurrentDirectory + "/wwwroot/json/utilisateurs.json");
                             break;

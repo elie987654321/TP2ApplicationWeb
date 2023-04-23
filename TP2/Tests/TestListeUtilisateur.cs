@@ -9,14 +9,18 @@ namespace Tests
     internal class TestListeUtilisateur
     {
         public void TestSauvegarderListe()
-        { }
+        {
+
+        }
 
         public void TestChargerListe()
-        { }
+        { 
 
-        public void TestAjouterUtilisateur();
+        }
+
+        public void TestAjouterUtilisateur()
         {
-}
 
+        }
     }
 }
