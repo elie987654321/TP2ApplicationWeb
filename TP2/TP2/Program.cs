@@ -58,15 +58,9 @@ namespace TP2
                 );
 
             app.MapControllerRoute(
-                name: "VosFavoris",
-                pattern: "VosFavoris",
-                defaults: new {controller = "Home", action="Favoris" }
-                );
-
-            app.MapControllerRoute(
-                name: "SeConnecter",
-                pattern: "SeConnecter",
-                defaults: new { controller = "Connexion", action = "Accueil" }
+                name: "DetailJeu",
+                pattern: "DetailJeu",
+                defaults: new {controller = "Home", action="FicheDeJeu" }
                 );
 
             app.MapControllerRoute(
