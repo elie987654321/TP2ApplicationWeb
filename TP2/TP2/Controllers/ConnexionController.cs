@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
 
 using TP2.Models;
 
-using Newtonsoft.Json.Converters;
 using Newtonsoft.Json;
 
 namespace TP2.Controllers
