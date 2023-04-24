@@ -64,10 +64,14 @@ namespace TP2
                 );
 
             app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Connexion}/{action=Accueil}");
+                name: "DetailJeu",
+                pattern: "DetailJeuFavori",
+                defaults: new { controller = "Home", action = "FicheDeJeuFavori" }
+                );
 
-            
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Connexion}/{action=Accueil}"); 
 
             app.Run();
         }
