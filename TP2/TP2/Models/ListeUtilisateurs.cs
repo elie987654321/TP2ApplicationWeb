@@ -137,19 +137,22 @@ namespace TP2.Models
 
 
             //Verifie si le nom d'utilisateur existe deja
-            bool trouve = false;
-            int i = 0;
-            Utilisateur utilisateurATester;
-            do
+            if (liste.Count > 0)
             {
-                utilisateurATester = this.liste[i];
-                trouve = utilisateurATester.IdentifiantUnique == identifiantUnique;
-                i++;
-            }
-            while (!trouve && i < liste.Count - 1);
-            if (trouve)
-            {
-                return false;
+                bool trouve = false;
+                int i = 0;
+                Utilisateur utilisateurATester;
+                do
+                {
+                    utilisateurATester = this.liste[i];
+                    trouve = utilisateurATester.IdentifiantUnique == identifiantUnique;
+                    i++;
+                }
+                while (!trouve && i < liste.Count - 1);
+                if (trouve)
+                {
+                    return false;
+                }
             }
 
             //Ajout de l'utilisateur

@@ -33,8 +33,11 @@ namespace TP2
 
             app.UseAuthorization();
 
-            
-
+            app.MapControllerRoute(
+                name: "NouvelUtilisateur",
+                pattern: "NouvelUtilisateur",
+                defaults: new { controller = "Connexion", action = "CreerCompte" }
+                );
 
             app.MapControllerRoute(
                 name: "Bienvenue",
@@ -51,13 +54,27 @@ namespace TP2
             app.MapControllerRoute(
                 name: "VosFavoris",
                 pattern: "VosFavoris",
+                defaults: new { controller = "Home", action = "Favoris" }
+                );
+
+            app.MapControllerRoute(
+                name: "VosFavoris",
+                pattern: "VosFavoris",
                 defaults: new {controller = "Home", action="Favoris" }
+                );
+
+            app.MapControllerRoute(
+                name: "SeConnecter",
+                pattern: "SeConnecter",
+                defaults: new { controller = "Connexion", action = "Accueil" }
                 );
 
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Connexion}/{action=Accueil}");
+
             
+
             app.Run();
         }
     }

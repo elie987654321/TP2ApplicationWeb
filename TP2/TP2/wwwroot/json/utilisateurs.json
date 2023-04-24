@@ -120,35 +120,5 @@
       }
     ],
     "Evaluations": []
-  },
-  {
-    "IdentifiantUnique": "testeur",
-    "Pseudo": "qwer",
-    "MotDePasse": "aaa",
-    "Nom": "rq",
-    "Prenom": "rewq",
-    "Role": "Utilisateur",
-    "Favoris": [],
-    "Evaluations": []
-  },
-  {
-    "IdentifiantUnique": "fgfjsghdfjl",
-    "Pseudo": "fdsfhadjsl",
-    "MotDePasse": "safdkjlh",
-    "Nom": "ewrquioep",
-    "Prenom": "fdsfhajsl",
-    "Role": "Utilisateur",
-    "Favoris": [],
-    "Evaluations": []
-  },
-  {
-    "IdentifiantUnique": "sadashjk",
-    "Pseudo": "hjkhjkhkj",
-    "MotDePasse": "kjkh",
-    "Nom": "kb,nbnm",
-    "Prenom": "iuoiuo",
-    "Role": "Utilisateur",
-    "Favoris": [],
-    "Evaluations": []
   }
 ]

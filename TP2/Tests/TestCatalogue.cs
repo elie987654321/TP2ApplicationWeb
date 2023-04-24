@@ -18,7 +18,6 @@ namespace TestCatalogue
         public void Setup()
         {
 
-
             //jeux valides pour chacun des constructeurs
             catalogue = new Catalogue();
             chemin = Environment.CurrentDirectory;
@@ -47,6 +46,7 @@ namespace TestCatalogue
         public void TestCatalogueSucces()
         {
             // Le catalogue commence vide
+            Console.WriteLine(catalogue.ToString());
             Assert.IsTrue(catalogue.ToString().Equals(""));
 
         }
@@ -102,7 +102,5 @@ namespace TestCatalogue
             Assert.IsTrue(catalogue.ToString().Contains(jeu2.ToString()));
             Assert.IsFalse(catalogue.ToString().Contains(jeu1.ToString()));
         }
-
-        
     }
 }

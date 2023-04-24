@@ -1974,8 +1974,3 @@ D:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\TP2ApplicationWeb\TP2\TP2\obj\Deb
 D:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\TP2.pdb
 D:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\TP2.genruntimeconfig.cache
 D:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\ref\TP2.dll
-E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\staticwebassets\msbuild.TP2.Microsoft.AspNetCore.StaticWebAssets.props
-E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\staticwebassets\msbuild.build.TP2.props
-E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TP2.props
-E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TP2.props
-E:\Hiver2023\420-4B6-LI APPLICATIONS WEB I\TP2\TP2ApplicationWeb\TP2\TP2\obj\Debug\net6.0\staticwebassets.pack.json
